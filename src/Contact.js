@@ -1,20 +1,24 @@
 import React from 'react';
+import logo from './images/whitfieldMediaLogo.png';
+import './styles/scss/contact.scss';
 
 class Contact extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
     render() {
         return (
             <div className="contact-page-wrapper">
-                <div id="top-anchor" style={{position: 'absolute', top: 0, left: 0}}></div>
-                <div className="top-container">
-                    <div className="column">
-                        <img src="images/whitfieldMediaLogo.png" className="whitfield-logo" alt="Whitfield Media Logo" />
-                        <h1 className="header ml2"> Whitfield Media </h1>
+                <div className="contact-top-container">
+                    <div className="contact-column">
+                        <img src={logo} className="whitfield-logo" alt="Whitfield Media Logo" />
+                        <h1 className="contact-header"> Whitfield Media </h1>
                     </div>
-                    <div className="column">
-                        <a className="fb-link link ml2" href="https://www.facebook.com/wemakeadvertisements/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook"></i> Follow Us! </a>
-                        <a className="mail-link link ml2" href="mailto:charlie@cwhitfieldmedia.com"> <i className="far fa-envelope"></i> charlie@cwhitfieldmedia.com</a>
-                        <a className="phone-link link ml2" href="tel:6628091975"> <i className="fas fa-phone"></i> (662) 809-1975 </a>
-                        <a className="site-link link ml2" href="http://www.wemakeads.com" target="_blank" rel="noopener noreferrer"> www.wemakeads.com </a>
+                    <div className="contact-column2">
+                        <a className="fb-link contact-link" href="https://www.facebook.com/wemakeadvertisements/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook"></i> Follow Us! </a>
+                        <a className="mail-link contact-link" href="mailto:charlie@cwhitfieldmedia.com"> <i className="far fa-envelope"></i> charlie@cwhitfieldmedia.com</a>
+                        <a className="phone-link contact-link" href="tel:6628091975"> <i className="fas fa-phone"></i> (662) 809-1975 </a>
+                        <a className="site-link contact-link" href="http://www.wemakeads.com" target="_blank" rel="noopener noreferrer"> www.wemakeads.com </a>
                     </div>
                 </div>
                 <form id="formContainer" action="https://formspree.io/charlie@cwhitfieldmedia.com" method="POST">

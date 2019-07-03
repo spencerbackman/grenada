@@ -1,0 +1,84 @@
+@import 'assets';
+
+.business-page-wrapper {
+    min-height: 100vh;
+}
+
+.business-top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.business-header {
+    font-family: $serif;
+    font-size: 45px;
+    color: $white;
+    font-weight: $medium;
+    text-align: center;
+}
+
+.business-container {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+}
+
+.business-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    z-index: 0;
+    width: auto;
+    height: auto;
+}
+
+.business-partner-logo {
+    max-width: 300px;
+    width: auto;
+    height: auto;
+    max-height: 100px;
+    display: block;
+    position: relative;
+    padding: 20px 0;
+    z-index: 0;
+    margin-top: 20px;
+}
+
+.business-box iframe {
+  width: 80vw;
+  height: 45vw;
+  max-width: 600px;
+  max-height: 337px;
+  min-width: 300px;
+  min-height: 169px;
+  margin: 0 10px 20px 10px;
+  z-index: 0;
+}
+
+.business-header2 {
+    font-family: $serif2;
+    font-size: 35px;
+    color: $white;
+    font-weight: 400;
+    text-align: center;
+}
+#bryant-farms-logo {
+    border-radius: 50%;
+}
+@media only screen and (max-width: 1000px) {
+    .business-container {
+        grid-template-columns: 100%;
+    }
+}

@@ -1,3 +1,178 @@
+.contact-page-wrapper {
+  min-height: 100vh;
+}
 
+.contact-top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding-top: 120px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whitfield-logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  z-index: 0;
+  position: relative;
+  display: block;
+}
+
+.contact-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.contact-column2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin: 0 30px;
+}
+
+.contact-header {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  color: #f5f7f6;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact-link {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 23px;
+  color: #f5f7f6;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px 0;
+  text-align: left;
+}
+
+.contact-link:hover {
+  color: #00c07f;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.contactRow {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contactColumn {
+  width: 40%;
+  min-width: 300px;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+  align-content: initial;
+  align-items: initial;
+  border-bottom: 1px solid #f5f7f6;
+}
+
+.input {
+  width: 80%;
+  border: none;
+  height: 30px;
+  font-size: 15px;
+  background: #1A1A1C;
+  color: #f5f7f6;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form_label {
+  padding-top: 7px;
+  padding-right: 15px;
+  justify-self: baseline;
+  align-self: baseline;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 20px;
+  width: auto;
+  color: #00c07f;
+}
+
+.message_row {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  justify-items: baseline;
+  align-content: baseline;
+  align-items: baseline;
+  border-bottom: 1px solid #f5f7f6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.message_input {
+  width: 90%;
+  height: 30px;
+  font-size: 15px;
+  border: none;
+  background: #1A1A1C;
+  color: #f5f7f6;
+}
+
+#form-button {
+  margin: 20px auto 50px auto;
+  height: 30px;
+  width: 150px;
+  font-size: 20px;
+  color: #1A1A1C;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 500;
+  background-color: #f5f7f6;
+  border: 1px solid #B9B8B8;
+}
+
+#form-button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-top-container {
+    flex-flow: row wrap;
+    text-align: center;
+  }
+
+  .contact-link {
+    font-size: 20px;
+  }
+
+  .contact-header {
+    font-size: 30px;
+  }
+
+  .message_row {
+    width: 300px;
+  }
+
+  .message_input {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=contact.css.map */

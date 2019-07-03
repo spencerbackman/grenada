@@ -10,7 +10,7 @@ class Nav extends React.Component {
             class: 'closed',
             class2: 'toggle-closed',
             isDropClicked: false,
-            dropdown: 'closed',
+            dropdown: 'dropdown-closed',
             isDropClicked2: false,
             dropdown2: 'dropdown2-closed',
             isDropClicked3: false,
@@ -106,7 +106,14 @@ class Nav extends React.Component {
                                 <Link className="nav-links" to="/"> HOME </Link>
                             </li>
                             <li className="dropdown">
-                                <div className="dropbtn"> ENTERTAINMENT </div>
+                                <div className="dropbtn"> EXPLORE </div>
+                                <div className="dropdown-content">
+                                    <Link className="dropdown-link" to="/restaurants"> RESTAURANTS </Link>
+                                    <Link className="dropdown-link" to="/business"> BUSINESSESS </Link>
+                                </div>
+                            </li>
+                            <li className="dropdown">
+                                <div className="dropbtn"> PLAY </div>
                                 <div className="dropdown-content">
                                     <Link className="dropdown-link" to="/movie-theater"> MOVIE THEATER </Link>
                                     <Link className="dropdown-link" to="/sport-center"> SPORTS CENTER </Link>
@@ -123,13 +130,6 @@ class Nav extends React.Component {
                                     <Link className="dropdown-link" to="/grown-woman"> GROWN WOMAN </Link>
                                     <Link className="dropdown-link" to="/grenada-events"> GRENADA EVENTS </Link>
                                     <Link className="dropdown-link" to="/rotary-club"> ROTARY CLUB </Link>
-                                </div>
-                            </li>
-                            <li className="dropdown">
-                                <div className="dropbtn"> LOCAL PARTNERS </div>
-                                <div className="dropdown-content">
-                                    <Link className="dropdown-link" to="/restaurants"> RESTAURANTS </Link>
-                                    <Link className="dropdown-link" to="/business"> BUSINESSESS </Link>
                                 </div>
                             </li>
                             <li className="nav-link">
@@ -151,7 +151,14 @@ class Nav extends React.Component {
                             <Link to="/" className="nav-links" onClick={this.handleClose}> HOME </Link>
                         </li>
                         <li className="dropdown">
-                            <div className="dropbtn" onClick={this.handleDropClick}> ENTERTAINMENT </div>
+                            <div className="dropbtn" onClick={this.handleDropClick3}> EXPLORE </div>
+                            <div className={this.state.dropdown3}>
+                                <Link onClick={this.handleClose} className="dropdown-link" to="/restaurants"> RESTAURANTS </Link>
+                                <Link onClick={this.handleClose} className="dropdown-link" to="/business"> BUSINESSESS </Link>
+                            </div> 
+                        </li>
+                        <li className="dropdown">
+                            <div className="dropbtn" onClick={this.handleDropClick}> PLAY </div>
                             <div className={this.state.dropdown}>
                                 <Link onClick={this.handleClose} className="dropdown-link" to="/movie-theater"> MOVIE THEATER </Link>
                                 <Link onClick={this.handleClose} className="dropdown-link" to="/sport-center"> SPORTS CENTER </Link>
@@ -169,13 +176,6 @@ class Nav extends React.Component {
                                 <Link onClick={this.handleClose} className="dropdown-link" to="/grenada-events"> GRENADA EVENTS </Link>
                                 <Link onClick={this.handleClose} className="dropdown-link" to="/rotary-club"> ROTARY CLUB </Link>
                             </div>
-                        </li>
-                        <li className="dropdown">
-                            <div className="dropbtn" onClick={this.handleDropClick3}> LOCAL PARTNERS </div>
-                            <div className={this.state.dropdown3}>
-                                <Link onClick={this.handleClose} className="dropdown-link" to="/restaurants"> RESTAURANTS </Link>
-                                <Link onClick={this.handleClose} className="dropdown-link" to="/business"> BUSINESSESS </Link>
-                            </div> 
                         </li>
                         <li className="nav-link" onClick={this.handleClose}>
                             <Link className="nav-links" onClick={this.handleClose} to="/contact"> CONTACT </Link>

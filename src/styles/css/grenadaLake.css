@@ -1,3 +1,90 @@
+.lake-page-wrapper {
+  min-height: 100vh;
+}
 
+.lake-header-container {
+  position: relative;
+  width: 100vw;
+  padding-top: 120px;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  align-items: center;
+}
+
+.lake-header {
+  font-size: 45px;
+  position: relative;
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: #f5f7f6;
+  text-align: center;
+}
+
+.lake-video {
+  padding: 0;
+  margin: 20px;
+  width: 40vw;
+  height: 22.5vw;
+  max-width: 800px;
+  max-height: 449.4px;
+  min-width: 300px;
+  min-height: 169px;
+}
+
+.lake-about-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  padding: 50px;
+}
+
+.lake-par {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 25px;
+  color: #f5f7f6;
+}
+
+.lake-picture {
+  padding: 0;
+  margin: 20px;
+  width: 40vw;
+  height: 22.5vw;
+  max-width: 800px;
+  max-height: 449.4px;
+  min-width: 300px;
+  min-height: 169px;
+}
+
+.lake-row {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: space-around;
+  align-content: space-around;
+}
+
+@media only screen and (max-width: 800px) {
+  .lake-row {
+    grid-template-columns: auto;
+  }
+
+  .lake-picture {
+    width: 90vw;
+    height: 50.7vw;
+  }
+
+  .lake-video {
+    width: 90vw;
+    height: 50.7vw;
+  }
+}
 
 /*# sourceMappingURL=grenadaLake.css.map */

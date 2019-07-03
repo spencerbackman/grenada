@@ -12,17 +12,21 @@ import { Link } from 'react-router-dom';
 import './styles/scss/home.scss';
 
 class Home extends React.Component {
+    componentDidMount() {
+        window.scrollTo(0,0)
+    }
     render() {
         return (
             <div className="home-page">
-                <div classNameName="top-wrapper">
-                    <div classNameName="video-wrapper">
+                <div className="top-wrapper">
+                    <div className="video-wrapper">
                         <iframe title="drone footage over grenada" className="background-video" src="https://player.vimeo.com/video/314553822?autoplay=1&loop=1&background=1" frameBorder="0"></iframe>
+                        <div className="top-header"> Local Grenada </div>
                     </div>
                 </div>
-                <div className="top-container">
-                    <h1 className="top-header"> Local Grenada </h1>
-                </div>
+                {/* <div className="top-container">
+
+                </div> */}
                 <a className="weatherwidget-io" target="_blank" rel="noreferrer noopener" href="https://forecast7.com/en/33d77n89d81/grenada/?unit=us" data-label_1="GRENADA" data-label_2="WEATHER" data-theme="clear" data-basecolor="rgba(242, 242, 242, 1)" >GRENADA WEATHER</a>
                 <a className="ad-container" href="https://www.holmescc.edu/" target="_blank" rel="noopener noreferrer">
                     <img src={holmesAd} className="banner-ad" alt="Holmes Community College Ad"/>
@@ -39,13 +43,13 @@ class Home extends React.Component {
                                 Partner With Us!
                             </Link>
                         </div>
-                        <a class="radio link" target="_blank" rel="noreferrer noopener" href="https://radio.securenetsystems.net/cwa/index.cfm?stationCallSign=WOHT">
-                            <img src={radio} class="radio-logo" alt="grenada star radio channel 92.3" />
+                        <a className="radio link" target="_blank" rel="noreferrer noopener" href="https://radio.securenetsystems.net/cwa/index.cfm?stationCallSign=WOHT">
+                            <img src={radio} className="radio-logo" alt="grenada star radio channel 92.3" />
                         </a>
                     </div>
-                    <div class="main-video-holder">
-                        <iframe class="main-video" title="Grenada Lake is getting high! ~ Local Grenada Ms" src="https://player.vimeo.com/video/332499091" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-                        <iframe class="main-video" title="Local Grenada" src="https://player.vimeo.com/video/344663472" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                    <div className="main-video-holder">
+                        <iframe className="main-video" title="Grenada Lake is getting high! ~ Local Grenada Ms" src="https://player.vimeo.com/video/332499091" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                        <iframe className="main-video" title="Local Grenada" src="https://player.vimeo.com/video/344663472" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                     </div>
                 </div>
                 <div className="home-container">
@@ -58,11 +62,11 @@ class Home extends React.Component {
                         <img src={eats} className="home-image" alt="Food"/>
                     </div>
                 </div>
-                <div className="home-container">
+                <div className="home-container" id="home-shop-container">
                     <div className="home-column">
                         <img src={shop} className="home-image" alt="Shop"/>
                     </div>
-                    <Link className="home-column" to="/businesses">
+                    <Link className="home-column" to="/business">
                         <h2 className="home-header2"> Where to Shop </h2>
                         <img src={nextPage} className="next-page-icon" alt="Right Arrow"/>
                         <p className="home-par"> Grenada isn't the biggest city but it still has tons to offer! Whether you are looking for locally raised beef to buying a new tractor we've put together businesses that we trust. </p>
@@ -78,7 +82,7 @@ class Home extends React.Component {
                         <img src={movie} className="home-image" alt="Grenada Plaza Cinema"/>
                     </div>
                 </div>
-                <div className="home-container">
+                <div className="home-container" id="home-sports-container">
                     <div className="home-column">
                         <img src={pool} className="home-image" alt="The Sports Center"/>
                     </div>
@@ -98,11 +102,11 @@ class Home extends React.Component {
                         <img src={lake} className="home-image" alt="Grenada Lake"/>
                     </div>
                 </div>
-                <div className="home-container">
+                <div className="home-container" id="home-golf-container">
                     <div className="home-column">
                         <img src={golf} className="home-image" alt="Dogwoods Golf Course"/>
                     </div>
-                    <Link className="home-column" to="/golf">
+                    <Link className="home-column" to="/golf-course">
                         <h2 className="home-header2"> Dogwoods Golf Course </h2>
                         <img src={nextPage} className="next-page-icon" alt="Dogwoods Golf Course"/>
                         <p className="home-par"> If you're a golfer in the area you've probably been to Dogwoods Golf Course. If you're unfimiliar with the course Golf Digest says it's "America's Best New Bargain". Go check out Dogwoods Golf Course! </p>

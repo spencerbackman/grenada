@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home';
 import Business from './Business';
 import Contact from './Contact';
+import Footer from './Footer';
 import Golf from './Golf';
 import GoodSide from './GoodSide';
 import GrenadaEvents from './GrenadaEvents';
@@ -25,7 +26,7 @@ class App extends React.Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/business" component={Business} />
                     <Route path="/contact" component={Contact} />
-                    <Route path="/golf" component={Golf} />
+                    <Route path="/golf-course" component={Golf} />
                     <Route path="/the-good-side" component={GoodSide} />
                     <Route path="/grenada-events" component={GrenadaEvents} />
                     <Route path="/grenada-lake" component={GrenadaLake} />
@@ -37,6 +38,7 @@ class App extends React.Component {
                     <Route path="/rotary-club" component={RotaryClub} />
                     <Route path="/sport-center" component={SportCenter} />
                 </Switch>
+                <Footer />
             </div>
         )
     }

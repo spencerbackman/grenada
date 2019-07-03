@@ -2,60 +2,66 @@
 
 .movie-page-wrapper {
     min-height: 100vh;
+    background: linear-gradient( #000, #111111, #201733, #222222, #111111);
+    padding-bottom: 50px;
 }
 
 .movie-top-wrapper {
     width: 100%;
-    height: 100vh;
+    padding-top: 120px;
+    height: auto;
     overflow: hidden;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    justify-items: center;
     align-content: center;
     align-items: center;
 }
 
-.movie-background-image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
 .movie-header {
     position: relative;
-    margin-top: 150px;
     text-align: center;
     color: $white;
-    font-size: 50px;
+    font-size: 40px;
     font-family: $serif;
     letter-spacing: 2px;
+}
+.movie-top-row {
+    display: flex;
+    flex-flow: row;
+    padding: 0;
+    margin: 0;
 }
 
 .movie-mid-wrapper {
     width: 100%;
-    width: 100vw;
+    height: auto;
     position: relative;
     overflow-x: hidden;
     overflow-y: auto;
-    background: linear-gradient( #000, #111111, #201733, #222222, #111111);
+}
+.movie-title {
+    font-family: $serif;
+    color: $white;
+    font-size: 25px;
+    font-weight: $light;
+    text-align: center;
 }
 
-.movie-link {
+.movie-top-link {
     font-family: $sans;
     position: relative;
-    font-size: 30px;
+    font-size: 23px;
     color: $white;
     text-align: center;
     text-decoration: none;
-    padding: 20px;
+    padding: 0px 20px;
+    font-weight: $light;
 }
-.movie-link:hover {
-    color: #83C81C;
+.movie-top-link:hover {
+    color: $green;
     transform: scale(1.05)
 }
 
@@ -63,8 +69,8 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    margin-left: auto;
-    margin-right: auto;
+    justify-self: center;
+    align-self: center;
     padding: 0;
     margin: 0;
 }
@@ -73,7 +79,7 @@
     width: 90vw;
     margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: space-evenly;
 }
 
@@ -126,6 +132,14 @@
     background: $black;
     overflow-y: scroll;
 }
+.movie-popup-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
 .popup-content {
     position: relative;
     display: block;
@@ -171,7 +185,7 @@
     height: auto;
     display: flex;
     flex-flow: column;
-    background: $light-grey;
+    background: $black;
     border-radius: 10px;
     padding: 0;
     margin: 0;
@@ -179,24 +193,16 @@
 }
 
 .popup-movie-image {
-    height: 300px;
-    width: 200px;
+    height: 350px;
+    width: 225px;
     display: block;
     padding-right: 25px;
+    float: right;
+    margin-left: auto;
 }
 
 .movie-container:hover {
     transform: scale(1.01);
-}
-
-.movie-header {
-    font-family: $serif;
-    font-size: 25px;
-    color: #4a4a4a;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
 .movie-info-row {
@@ -204,9 +210,11 @@
     width: 90%;
     display: flex;
     flex-flow: row;
-    margin: 50px auto 0 auto;
+    margin: 50px auto 0 0;
     justify-content: center;
     justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 
 .column {
@@ -231,7 +239,7 @@
 .movie-header3 {
     font-family: $serif;
     font-size: 35px;
-    color: #4a4a4a;
+    color: $white;
     width: 100%;
     text-align: left;
     padding-top: 0;
@@ -243,14 +251,14 @@
 .movie-par {
     font-family: $sans;
     font-size: 20px;
-    color: #515151;
+    color: $white;
     width: 100%;
     padding: 0;
     margin: 0;
 }
 
 .strong {
-    color: #313131;
+    color: $white;
     font-size: 22px;
     font-family: $sans;
     font-weight: bolder;
@@ -259,12 +267,12 @@
 .movie-link {
     font-family: $sans;
     font-size: 18px;
-    color: $green;
+    color: $white;
     text-decoration: none;
     text-align: center;
 }
 .movie-link:hover {
-  color: #5a5a5a;
+  color: $green;
   transform: scale(1.05);
 }
 
@@ -290,7 +298,7 @@
 }
 
 .run-rating {
-    color: #676767;
+    color: $white;
     font-size: 18px;
     font-family: $sans;
 }
@@ -323,6 +331,12 @@
     padding-bottom: 30px;
 }
 
+.half {
+    max-width: 55%;
+}
+.third {
+    max-width: 35%;
+}
 
 @media only screen and (max-width: 900px) {
   .movie-info-row {
@@ -338,4 +352,60 @@
     padding: 0;
     align-self: center;
   }
+  .popup-movie-image {
+      float: none;
+      justify-self: center;
+      align-self: center;
+      margin: 0 auto;
+  }
+  .movie-column {
+      float: none;
+  }
+  .movie-header3 {
+      text-align: center;
+      margin: 10px 20px 0px 20px;
+  }
+  .movie-par {
+      width: 90%;
+      margin: 0 auto;
+  }
+  .movie-info-row {
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    .movie-row {
+        flex-flow: column;
+    }
+    .half {
+        max-width: 500px;
+        min-width: 300px;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    .third {
+        margin: 0 auto;
+        max-width: 500px;
+        min-width: 300px;
+        width: auto;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .movie-top-row {
+        flex-flow: column-reverse;
+    }
+    .movie-top-link {
+        text-align: left;
+        padding: 5px 10px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .movie-header3 {
+        font-size: 30px;
+        font-weight: $medium;
+    }
 }

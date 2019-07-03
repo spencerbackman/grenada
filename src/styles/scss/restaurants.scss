@@ -1,0 +1,151 @@
+@import 'assets';
+
+.restaurant-page-wrapper {
+    min-height: 100vh;
+}
+
+.food-top-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+.food-header {
+    font-family: $serif;
+    font-size: 45px;
+    color: $white;
+    font-weight: $medium;
+    text-align: center;
+}
+
+.food-container {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.food-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    z-index: 0;
+    width: auto;
+}
+
+.food-partner-logo {
+    width: auto;
+    max-width: 300px;
+    height: auto;
+    max-height: 100px;
+    margin: 20px 0;
+    z-index: 0;
+    display: block;
+}
+.food-box iframe {
+    width: 80vw;
+    height: 45vw;
+    max-width: 600px;
+    max-height: 337px;
+    min-width: 300px;
+    min-height: 169px;
+    margin: 0 10px 20px 10px;
+    z-index: 0;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.menu-link {
+  font-family: $sans;
+  font-size: 25px;
+  color: $white;
+  text-align: center;
+  padding: 0 0 10px 0;
+  margin: 0;
+}
+
+.menu-link:hover {
+  color: $green;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.food-popup {
+  position: fixed;
+  left: 5vw;
+  width: 90vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow-y: scroll;
+  border: 1px solid #e8e8e8;
+  background: #f2f3ee;
+  top: 0;
+  bottom: 0;
+  right: 5vw;
+  z-index: 10000
+}
+.food-inner-poup {
+  height: 100%;
+  position: fixed;
+  display: block;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  background: $white;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+}
+
+.food-popupCloseButton {
+    background-color: $white;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: fixed;
+    top: 6vh;
+    right: 13vw;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 500;
+}
+
+.food-popupCloseButton:hover {
+    background-color: #ccc;
+}
+
+.food-popup img {
+  width: 90vw;
+  max-width: 1000px;
+  min-width: 300px;
+  height: auto;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 50px auto;
+}

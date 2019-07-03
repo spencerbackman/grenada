@@ -1,3 +1,245 @@
+.sport-page-wrapper {
+  min-height: 100vh;
+}
 
+.sport-header-wrapper {
+  position: relative;
+  padding-top: 120px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+}
+
+.sport-header-row {
+  display: flex;
+  flex-flow: row;
+}
+
+.sport-header {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  color: #f5f7f6;
+  text-align: center;
+  font-weight: 500;
+}
+
+.sport-top-link {
+  font-family: "Maven Pro", sans-serif;
+  position: relative;
+  font-size: 23px;
+  color: #f5f7f6;
+  text-align: center;
+  text-decoration: none;
+  padding: 0px 20px;
+  font-weight: 300;
+}
+
+.sport-top-link:hover {
+  color: #00c07f;
+  transform: scale(1.1);
+}
+
+.sport-mid-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.sport-mid-wrapper iframe {
+  padding: 0;
+  margin: 20px auto;
+  width: 90vw;
+  height: 50.6vw;
+  max-width: 600px;
+  max-height: 350px;
+  min-width: 300px;
+  min-height: 169px;
+}
+
+.sport-header2 {
+  font-size: 35px;
+  font-family: "Playfair Display", serif;
+  color: #f5f7f6;
+  text-align: center;
+  font-weight: 400;
+}
+
+.sport-mid-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: space-around;
+  align-items: space-around;
+}
+
+.sport-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 90vw;
+}
+
+.sport-row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: none;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.sport-column {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.sport-image {
+  display: block;
+  z-index: 0;
+  width: 600px;
+  max-width: 90vw;
+  height: auto;
+  filter: brightness(65%);
+}
+
+.sport-box {
+  position: absolute;
+  z-index: 5;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.sport-header3 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  color: #f5f7f6;
+  font-weight: normal;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.sport-par {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 30px;
+  color: #f5f7f6;
+}
+
+.sport-hours-container {
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.sport-hours-holder {
+  display: flex;
+  flex-direction: row;
+}
+
+.table {
+  font-size: 18px;
+  border-collapse: collapse;
+  border: 1px solid #f5f7f6;
+  margin-top: 30px;
+  width: 350px;
+}
+
+.table caption {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  color: #f5f7f6;
+  font-weight: 500;
+}
+
+.table td {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 10px;
+  color: #393939;
+}
+
+.table th {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding-right: 10px;
+  color: #1A1A1C;
+}
+
+.table td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+.table tr:nth-child(odd) {
+  background: #e8e8e8;
+}
+
+.table tr:nth-child(even) {
+  background: #dddddd;
+}
+
+.sport-quote {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 25px;
+  color: #f5f7f6;
+  text-align: center;
+}
+
+.sport-name {
+  font-family: "Playfair Display", serif;
+  font-size: 25px;
+  color: #f5f7f6;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sport-header2 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .sport-header-row {
+    flex-flow: column;
+  }
+
+  .sport-top-link {
+    text-align: left;
+    padding: 5px 10px;
+    margin: 0;
+  }
+
+  .sport-header {
+    max-width: 90vw;
+  }
+
+  .sport-image {
+    max-height: 300px;
+    min-height: 200px;
+    max-width: 90vw;
+    min-width: 300px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .table {
+    max-width: 300px;
+  }
+}
 
 /*# sourceMappingURL=sportCenter.css.map */
