@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 class GoodSide extends React.Component {
     componentDidMount() {
@@ -7,6 +8,12 @@ class GoodSide extends React.Component {
     render() {
         return (
             <div className="tv-page-wrapper">
+                <Helmet>
+                    <title> The Good Side ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="The Good Side is a t.v. episode by Local Grenada. It's goal is to find all the good things in Grenada." />
+                    <link rel="canonical" href="https://www.localgrenada.com/the-good-side"/>
+                </Helmet>
                 <div class="tv-top-container">
                     <h1 class="tv-header"> The Good Side </h1>
                     <iframe title="vimeo-player The Good Side" src="https://player.vimeo.com/video/320828946" frameBorder="0" allowFullScreen></iframe>

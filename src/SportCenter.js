@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/scss/sportCenter.scss';
 import image from './images/sport-center-outside.png';
+import { Helmet } from 'react-helmet';
 
 class SportCenter extends React.Component {
     componentDidMount() {
@@ -9,6 +10,12 @@ class SportCenter extends React.Component {
     render() {
         return (
             <div className="sport-page-wrapper">
+                <Helmet>
+                    <title> The Sports Center ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Going through the struggle of wanting a pool table but not having the room or money for it? Okay.. maybe that's not the case but, with happy hour everyday, great food, and pool tournaments every Tuesday and Thursday you need to check out The Sports Center!" />
+                    <link rel="canonical" href="https://www.localgrenada.com/sport-center"/>
+                </Helmet>
                 <div className="sport-header-wrapper">
                     <h1 className="sport-header" > The Sports Center </h1>
                     <div className="sport-header-row">

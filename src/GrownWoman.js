@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 class GrownWoman extends React.Component {
     componentDidMount() {
@@ -7,6 +8,12 @@ class GrownWoman extends React.Component {
     render() {
         return (
             <div className="tv-page-wrapper">
+                <Helmet>
+                    <title> Grown Woman ~ Local Grenada </title>
+                    <link rel="canonical" href="https://www.localgrenada.com/grown-woman"/>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Local Grenada presents our cooking show Grown Woman. Learn how to cook great food with a great host!"/>
+                </Helmet> 
                 <div className="tv-top-container">
                     <h1 className="tv-header"> Grown Woman </h1>
                     <iframe title="vimeo-player Grown Woman Episode 3" src="https://player.vimeo.com/video/278746719" frameBorder="0" allowFullScreen></iframe>

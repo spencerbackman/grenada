@@ -4,6 +4,7 @@ import spencerLogo from './images/spencers.png';
 import tzLogo from './images/T&ZS.png';
 import papsLogo from './images/Paps+Logo1.png';
 import papsMenu from './images/Paps_menu.png';
+import { Helmet } from 'react-helmet';
 
 class Restaurants extends React.Component {
     constructor() {
@@ -31,6 +32,12 @@ class Restaurants extends React.Component {
     render() {
         return (
             <div className="restaurant-page-wrapper">
+                <Helmet>
+                    <title> Restaurants ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Grenada is full of great places to eat! Check out Local Grenada's top picks!" />
+                    <link rel="canonical" href="https://www.localgrenada.com/restaurants"/>
+                </Helmet>
                 <div className="food-top-container">
                     <h1 className="food-header"> Restaurants </h1>
                     <div className="food-container">

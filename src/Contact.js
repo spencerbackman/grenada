@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './images/whitfieldMediaLogo.png';
+import { Helmet } from 'react-helmet';
 import './styles/scss/contact.scss';
 
 class Contact extends React.Component {
@@ -9,6 +10,11 @@ class Contact extends React.Component {
     render() {
         return (
             <div className="contact-page-wrapper">
+                <Helmet>
+                    <title> Contact Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="If you have any questions or would like to contact us shoot us a email using the form below or give us a call!" />
+                </Helmet>
                 <div className="contact-top-container">
                     <div className="contact-column">
                         <img src={logo} className="whitfield-logo" alt="Whitfield Media Logo" />

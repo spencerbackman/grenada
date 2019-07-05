@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 class GrenadaTalks extends React.Component {
     componentDidMount() {
@@ -7,6 +8,12 @@ class GrenadaTalks extends React.Component {
     render() {
         return (
             <div className="tv-page-wrapper">
+                <Helmet>
+                    <title> Grenada Talks ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Local Grenada Presents you with Grenada Talks. Grenada Talks is hosted by Kevin Jackson and he interviews great people in Grenada.  " />
+                    <link rel="canonical" href="https://www.localgrenada.com/grenada-talks"/>
+                </Helmet>
                 <div className="tv-top-container">
                     <h1 className="tv-header"> Grenada Talks </h1>
                     <iframe title="vimeo-player Grenada Talks Episode 11" src="https://player.vimeo.com/video/297775029" frameBorder="0" allowFullScreen></iframe>

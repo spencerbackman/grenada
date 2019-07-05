@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/scss/grenadaLake.scss';
 import lakePic from './images/grenadaLake.jpg';
 import picnicPic from './images/GrenadaPicnic.png';
+import { Helmet } from 'react-helmet';
 
 class GrenadaLake extends React.Component {
     componentDidMount() {
@@ -10,6 +11,12 @@ class GrenadaLake extends React.Component {
     render() {
         return (
             <div className="lake-page-wrapper">
+                <Helmet>
+                    <title> Grenada Lake ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Grenada Lake is one of the best things Grenada has to offer. With great Crappie fishing, boating, beaches, and camping you'll find it hard to pass up a day at Grenada Lake." />
+                    <link rel="canonical" href="https://www.localgrenada.com"/>
+                </Helmet>
                 <div className="lake-header-container">
                     <h1 className="lake-header"> Grenada Lake </h1>
                     <img className="lake-picture" src={lakePic} alt="Grenada Lake"/>

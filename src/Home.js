@@ -9,6 +9,7 @@ import holmesAd from './images/holmes-ad.jpg';
 import eats from './images/eats.png';
 import shop from './images/shop.png';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import './styles/scss/home.scss';
 
 class Home extends React.Component {
@@ -18,6 +19,12 @@ class Home extends React.Component {
     render() {
         return (
             <div className="home-page">
+            <Helmet>
+                <meta charSet="utf-8"/>
+                <title> Local Grenada </title>
+                <link rel="canonical" href="https://www.localgrenada.com/"/>
+                <meta name="description" content="Local Grenada, your all around guide to Grenada Mississippi. See upcoming events, tv episodes made in Grenada, where to eat, what to do, and Local Grenada's Radio Station." />
+            </Helmet>
                 <div className="top-wrapper">
                     <div className="video-wrapper">
                         <iframe title="drone footage over grenada" className="background-video" src="https://player.vimeo.com/video/314553822?autoplay=1&loop=1&background=1" frameBorder="0"></iframe>

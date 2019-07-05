@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 class RotaryClub extends React.Component {
     componentDidMount() {
@@ -7,6 +8,12 @@ class RotaryClub extends React.Component {
     render() {
         return (
             <div className="tv-page-wrapper">
+                <Helmet>
+                    <title> Rotary Club ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Watch as Grenada brings together business and professional leaders in order to provide humanitarian serice and to advance goodwill and peace in Grenada." />
+                    <link rel="canonical" href="https://www.localgrenada.com/rotary-club"/>
+                </Helmet>
                 <div className="tv-top-container">
                     <h1 className="tv-header"> Rotary Club </h1>
                     <iframe title="vimeo-player Rotary Club Meeting 5/13/19" src="https://player.vimeo.com/video/337836606" frameBorder="0" allow="fullscreen" allowFullScreen></iframe>

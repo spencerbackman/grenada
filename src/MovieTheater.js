@@ -4,6 +4,7 @@ import spiderMan from './images/SpiderMan_Far_from_Home169.jpg';
 import annabelle from './images/Annabelle_Comes_Home521.jpg';
 import toyStory from './images/Toy_Story_4560.jpg';
 import menInBlack from './images/Men_in_Black_International973.jpg';
+import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
     constructor() {
@@ -61,6 +62,12 @@ class MovieTheater extends React.Component {
     render() { 
         return (
             <div className="movie-page-wrapper">
+                <Helmet>
+                    <title> Grenada Plaza Cinema ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Want to go to the movies? Grenada Plaza Cinema is the only theater within a 50 mile radius of Grenada. Check out what movies are playing!"/>
+                    <link rel="canonical" href="https://www.localgrenada.com/movie-theater"/>
+                </Helmet> 
                 <div className="movie-top-wrapper">
                     <h1 className="movie-header"> Grenada Plaza Cinema </h1>
                     <div className="movie-top-row">

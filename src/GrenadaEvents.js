@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 class GrenadaEvents extends React.Component {
     componentDidMount() {
@@ -7,6 +8,12 @@ class GrenadaEvents extends React.Component {
     render() {
         return (
             <div className="tv-page-wrapper">
+                <Helmet>
+                    <title> Grenada Events ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Find out about upcoming events and past events that are likely to come again if you missed them!" />
+                    <link rel="canonical" href="https://www.localgrenada.com/grenada-events"/>
+                </Helmet>
                 <div id="tv-top-anchor" style={{position: 'absolute', top: 0, left: 0}}></div>
                 <div className="tv-top-container">
                     <h1 className="tv-header"> Grenada Events </h1>

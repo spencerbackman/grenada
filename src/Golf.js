@@ -1,5 +1,6 @@
 import React from 'react';
 import image from './images/dogwoods-golf.jpg';
+import { Helmet } from 'react-helmet';
 import './styles/scss/golf.scss';
 
 class Golf extends React.Component {
@@ -9,6 +10,12 @@ class Golf extends React.Component {
     render() {
         return (
             <div className="golf-page-wrapper">
+                <Helmet>
+                    <title> Dogwoods Golf Course ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="If you're a golfer in the area you've probably been to Dogwoods Golf Course. If you're unfimiliar with the course Golf Digest says it's 'America's Best New Bargain'. Go check out Dogwoods Golf Course!" />
+                    <link rel="canonical" href="https://www.localgrenada.com/golf" />
+                </Helmet>
                 <div className="golf-top-container">
                     <h1 className="golf-header"> Dogwoods Golf Course </h1>
                     <div className="golf-top-row">

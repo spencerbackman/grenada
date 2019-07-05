@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/scss/tv.scss';
+import { Helmet } from 'react-helmet';
 
 class GrenadaNews extends React.Component {
     componentDidMount() {
@@ -8,6 +9,12 @@ class GrenadaNews extends React.Component {
     render() {
         return (
             <div className="tv-page-wrapper">
+                <Helmet>
+                    <title> Grenada News ~ Local Grenada </title>
+                    <meta charSet="utf-8" />
+                    <meta name="description" content="Local Grenada is proud to present Grenada News." />
+                    <link rel="canonical" href="https://www.localgrenada.com/grenada-news"/>
+                </Helmet>
                 <div id="top-anchor" style={{position: 'absolute', top: 0, left: 0}}></div>
 
                 <div className="tv-top-container">

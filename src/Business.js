@@ -13,6 +13,7 @@ import holcombClinic from './images/holcombClinic-01.png';
 import bryantFarms from './images/bryantFarmsLogo-01.png';
 import nsmc from './images/nsmc-01.png';
 import buick from './images/buickGMC.png';
+import { Helmet } from 'react-helmet';
 import './styles/scss/business.scss';
 
 class Business extends React.Component {
@@ -22,6 +23,12 @@ class Business extends React.Component {
     render() {
         return (
                 <div className="business-page-wrapper">
+                    <Helmet>
+                        <title>Local Grenada Businesses</title>
+                        <link rel="canonical" href="https://www.localgrenada.com/business"/>
+                        <meta charSet="utf-8"/>
+                        <meta name="description" content="Grenada isn't the biggest city but it still has tons to offer! Whether you are looking for locally raised beef to buying a new tractor Local Grenada has put together businesses that you can trust." />
+                    </Helmet>
                     <div className="business-top-container">
                         <h1 className="business-header"> Local Businesses </h1>
                         <div className="business-container">
