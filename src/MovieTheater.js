@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/scss/movieTheater.scss';
+import './styles/css/movieTheater.css';
 import spiderMan from './images/SpiderMan_Far_from_Home169.jpg';
 import annabelle from './images/Annabelle_Comes_Home521.jpg';
 import toyStory from './images/Toy_Story_4560.jpg';

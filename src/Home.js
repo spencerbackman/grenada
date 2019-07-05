@@ -10,7 +10,7 @@ import eats from './images/eats.png';
 import shop from './images/shop.png';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import './styles/scss/home.scss';
+import './styles/css/home.css';
 
 class Home extends React.Component {
     componentDidMount() {

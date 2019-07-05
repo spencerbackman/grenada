@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/scss/tv.scss';
+import './styles/css/tv.css';
 import { Helmet } from 'react-helmet';
 
 class GrenadaNews extends React.Component {

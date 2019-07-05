@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/scss/grenadaLake.scss';
+import './styles/css/grenadaLake.css';
 import lakePic from './images/grenadaLake.jpg';
 import picnicPic from './images/GrenadaPicnic.png';
 import { Helmet } from 'react-helmet';

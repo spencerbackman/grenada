@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/scss/sportCenter.scss';
+import './styles/css/sportCenter.css';
 import image from './images/sport-center-outside.png';
 import { Helmet } from 'react-helmet';
 

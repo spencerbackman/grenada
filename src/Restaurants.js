@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/scss/restaurants.scss';
+import './styles/css/restaurants.css';
 import spencerLogo from './images/spencers.png';
 import tzLogo from './images/T&ZS.png';
 import papsLogo from './images/Paps+Logo1.png';

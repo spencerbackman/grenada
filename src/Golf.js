@@ -1,7 +1,7 @@
 import React from 'react';
 import image from './images/dogwoods-golf.jpg';
 import { Helmet } from 'react-helmet';
-import './styles/scss/golf.scss';
+import './styles/css/golf.css';
 
 class Golf extends React.Component {
     componentDidMount() {

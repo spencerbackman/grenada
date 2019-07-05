@@ -8,13 +8,13 @@ import kirkSun from './images/KirkSunset_blue-01.png';
 import sayle from './images/sayle.png';
 import caldwell from './images/caldwell-tree-service-01.png';
 import kirkToy from './images/KirkToyota_black.png';
-import csbLogo from './images/csbLogo.png';
+import csbLogo from './images/csblogo.png';
 import holcombClinic from './images/holcombClinic-01.png';
 import bryantFarms from './images/bryantFarmsLogo-01.png';
 import nsmc from './images/nsmc-01.png';
 import buick from './images/buickGMC.png';
 import { Helmet } from 'react-helmet';
-import './styles/scss/business.scss';
+import './styles/css/business.css';
 
 
 class Business extends React.Component {
