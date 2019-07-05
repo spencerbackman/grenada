@@ -16,6 +16,7 @@ import buick from './images/buickGMC.png';
 import { Helmet } from 'react-helmet';
 import './styles/scss/business.scss';
 
+
 class Business extends React.Component {
     componentDidMount() {
         window.scrollTo(0,0)
