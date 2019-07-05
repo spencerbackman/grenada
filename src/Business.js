@@ -8,7 +8,7 @@ import kirkSun from './images/KirkSunset_blue-01.png';
 import sayle from './images/sayle.png';
 import caldwell from './images/caldwell-tree-service-01.png';
 import kirkToy from './images/KirkToyota_black.png';
-import csb from './images/csbLogo.png';
+import csbLogo from './images/csbLogo.png';
 import holcombClinic from './images/holcombClinic-01.png';
 import bryantFarms from './images/bryantFarmsLogo-01.png';
 import nsmc from './images/nsmc-01.png';
@@ -70,7 +70,7 @@ class Business extends React.Component {
                                 <iframe title="vimeo-player Kirk Brothers Toyota" src="https://player.vimeo.com/video/311557332" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
-                                <img className="business-partner-logo" src={csb} alt="Cleveland State Bank" />
+                                <img className="business-partner-logo" src={csbLogo} alt="Cleveland State Bank" />
                                 <iframe title="vimeo-player Cleveland State Bank Commercial" src="https://player.vimeo.com/video/319969545" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
