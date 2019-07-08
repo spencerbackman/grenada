@@ -7,6 +7,17 @@ body {
   scroll-behavior: smooth;
 }
 
+.carousel-container {
+  width: 90%;
+  max-width: 800px;
+  min-width: 300px;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  margin: 20px auto;
+}
+
 .home-page {
   overflow: hidden;
   height: 100%;
@@ -173,14 +184,15 @@ body {
 }
 
 .ad-container {
-  margin: 0;
-  padding: 20px 0 0 0;
+  padding: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  align-content: center;
-  align-items: center;
+  display: block;
+  position: relative;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  margin: 0 auto;
 }
 
 .banner-ad {

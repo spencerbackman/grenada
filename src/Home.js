@@ -8,9 +8,20 @@ import radio from './images/grenada-radio.png';
 import holmesAd from './images/holmes-ad.jpg';
 import eats from './images/eats.png';
 import shop from './images/shop.png';
+import missAd from './images/ole-miss_DigitalAd.png';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import ImageSlider from 'ac-react-simple-image-slider';
 import './styles/css/home.css';
+
+const imageData = [
+    {
+        src: holmesAd
+    },
+    {
+        src: missAd
+    }
+]
 
 class Home extends React.Component {
     componentDidMount() {
@@ -31,13 +42,10 @@ class Home extends React.Component {
                         <div className="top-header"> Local Grenada </div>
                     </div>
                 </div>
-                {/* <div className="top-container">
-
-                </div> */}
                 <a className="weatherwidget-io" target="_blank" rel="noreferrer noopener" href="https://forecast7.com/en/33d77n89d81/grenada/?unit=us" data-label_1="GRENADA" data-label_2="WEATHER" data-theme="clear" data-basecolor="rgba(242, 242, 242, 1)" >GRENADA WEATHER</a>
-                <a className="ad-container" href="https://www.holmescc.edu/" target="_blank" rel="noopener noreferrer">
-                    <img src={holmesAd} className="banner-ad" alt="Holmes Community College Ad"/>
-                </a>
+                <div className="carousel-container">
+                    <ImageSlider showArrows={false} showDots={false} autoPlay={true} duration={7} infinite={true} data={imageData}/>
+                </div>
                 <div className="container">
                     <h1 className="home-header"> This is Grenada Mississippi. </h1>
                     <div className="button-wrapper">
