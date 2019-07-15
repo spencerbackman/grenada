@@ -19,13 +19,17 @@ class GrenadaNews extends React.Component {
 
                 <div className="tv-top-container">
                     <h1 className="tv-header"> Local Grenada News </h1>
-                    <iframe title="vimeo-player" src="https://player.vimeo.com/video/283453878" frameBorder="0" allowFullScreen></iframe>
+                    <iframe title="Grenada Baseball World Series Champs" src="https://player.vimeo.com/video/347786648" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                 </div>
                 <div className="tv-mid-container">
                     <h2 className="tv-header2"> Misses an episode? </h2>
-                    <a className="tv-video-link" href="https://vimeo.com/273738532" target="_blank" rel="noopener noreferrer"> Episode 1 </a>
-                    <a className="tv-video-link" href="https://vimeo.com/275322990" target="_blank" rel="noopener noreferrer"> Episode 2 </a>
+                    <a className="tv-video-link" href="https://vimeo.com/273738532" target="_blank" rel="noopener noreferrer"> Episode 1 (Thunder on Water) </a>
+                    <a className="tv-video-link" href="https://vimeo.com/275322990" target="_blank" rel="noopener noreferrer"> Episode 2 (Miss Mississippi Outstanding Teen) </a>
                     <a className="tv-video-link" href="https://vimeo.com/277345785" target="_blank" rel="noopener noreferrer"> Episode 3 </a>
+                    <a className="tv-video-link" href="https://vimeo.com/283453878" target="_blank" rel="noopener noreferrer"> Episode 4 </a>
+                    <a className="tv-video-link" href="https://vimeo.com/341843110" target="_blank" rel="noopener noreferrer"> Episode 5 (ROTC) </a>
+                    <a className="tv-video-link" href="https://vimeo.com/344663472" target="_blank" rel="noopener noreferrer"> Episode 6 </a>
+                    <a className="tv-video-link" href="https://vimeo.com/344666969" target="_blank" rel="noopener noreferrer"> Episode 7 (Pastor Blake) </a>
                 </div>
             </div>
         )

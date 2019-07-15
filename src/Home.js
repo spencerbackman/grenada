@@ -11,8 +11,6 @@ import shop from './images/shop.png';
 import missAd from './images/ole-miss_DigitalAd.png';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-// import { Carousel } from 'react-responsive-carousel';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './styles/css/home.css';
 
 class Home extends React.Component {
