@@ -58,7 +58,7 @@ class Home extends React.Component {
                         </a>
                     </div>
                     <div className="main-video-holder">
-                        <iframe className="main-video" title="Grenada Lake is getting high! ~ Local Grenada Ms" src="https://player.vimeo.com/video/332499091" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                        <iframe className="main-video" title="Grenada Baseball World Series Champs" src="https://player.vimeo.com/video/347786648" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                         <iframe className="main-video" title="Local Grenada" src="https://player.vimeo.com/video/344663472" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                     </div>
                 </div>
