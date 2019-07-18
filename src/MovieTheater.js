@@ -3,7 +3,7 @@ import './styles/css/movieTheater.css';
 import spiderMan from './images/SpiderMan_Far_from_Home169.jpg';
 import annabelle from './images/Annabelle_Comes_Home521.jpg';
 import toyStory from './images/Toy_Story_4560.jpg';
-import menInBlack from './images/Men_in_Black_International973.jpg';
+import lionKing from './images/The_Lion_King607.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -181,32 +181,32 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie4}>
-                                <img src={menInBlack} className="movie-image" alt="Men in Black: International" />
-                                <h3 className="movie-title"> Men in Black: International </h3>
+                                <img src={lionKing} className="movie-image" alt="The Lion King" />
+                                <h3 className="movie-title"> The Lion King </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={menInBlack} className="popup-movie-image" alt="Men in Black: International" />
+                                            <img src={lionKing} className="popup-movie-image" alt="The Lion King" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"> Men in Black: International </h3>
+                                            <h3 className="movie-header3"> The Lion King </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> G </p>
+                                                <p className="run-rating"> PG </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 40 m </p>
+                                                <p className="run-rating"> 1 h 58 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
-                                            <p className="movie-par"> 	The Men in Black have always protected the Earth from the scum of the universe. In this new adventure, they tackle their biggest, most global threat to date: a mole in the Men in Black organization. </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> Chris Hemsworth, Tessa Thompson, Liam Neeson, ebecca Ferguson, Emma Thompson, Rafe Spall </p> <br/>
-                                            <p className="movie-par"> <strong> Genres: </strong> Action, Comedy, Sci-Fi </p> <br/> <br/>
+                                            <p className="movie-par"> Simba idolises his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother and former heir to the throne has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his. </p> <br/>
+                                            <p className="movie-par"> <strong> Starring: </strong> 	Donald Glover, Beyonce Knowles, James Earl Jones, Chiwetel Ejiofor, Alfre Woodard, John Oliver </p> <br/>
+                                            <p className="movie-par"> <strong> Genres: </strong> Adventure, Family, Animation </p> <br/> <br/>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Men in Black: International" src="https://www.youtube.com/embed/BV-WEb2oxLk" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="The Lion King" src="https://www.youtube.com/embed/4CbLXeGSDxg" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
