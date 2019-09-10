@@ -42,7 +42,7 @@ class Business extends React.Component {
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={grenadaBadBoys} alt="Grenada Bad Boys" />
-                                <iframe title="vimeo-player Grenada Bad Boys May 2019" src="https://player.vimeo.com/video/333177045" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player Grenada Bad Boys May 2019" src="https://player.vimeo.com/video/358386121" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={kirkTrucks} alt="Kirk Brothers Truck Center" />
@@ -54,11 +54,11 @@ class Business extends React.Component {
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={kirkSun} alt="Kirk Brothers Sunset - Chrysler, Dodge, Jeep, Ram" />
-                                <iframe src="https://player.vimeo.com/video/333853048" title="vimeo-player Kirk Brothers Sunset - Chrysler, Dodge, Jeep, Ram" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                                <iframe src="https://player.vimeo.com/video/358372209" title="vimeo-player Kirk Brothers Sunset - Chrysler, Dodge, Jeep, Ram" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={sayle} alt="Sayle Oil Co." />
-                                <iframe title="vimeo-player Sayle Oil Co." src="https://player.vimeo.com/video/311756744" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player Sayle Oil Co." src="https://player.vimeo.com/video/355373266" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" id="caldwell-logo" src={caldwell} alt="Caldwell Tree Service" />
@@ -66,11 +66,11 @@ class Business extends React.Component {
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={kirkToy} alt="Kirk Brothers Toyota" />
-                                <iframe title="vimeo-player Kirk Brothers Toyota" src="https://player.vimeo.com/video/311557332" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player Kirk Brothers Toyota" src="https://player.vimeo.com/video/354277897" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={csbLogo} alt="Cleveland State Bank" />
-                                <iframe title="vimeo-player Cleveland State Bank Commercial" src="https://player.vimeo.com/video/319969545" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player Cleveland State Bank Commercial" src="https://player.vimeo.com/video/353666510" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={holcombClinic} alt="The Holcomb Clinic" />
@@ -90,7 +90,7 @@ class Business extends React.Component {
                             </div>
                             <div className="business-box">
                                 <h2 className="business-header2"> Winona Tractor & Equipment </h2>
-                                <iframe title="vimeo-player Winona Tractor & Equipment" src="https://player.vimeo.com/video/327757022" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player Winona Tractor & Equipment" src="https://player.vimeo.com/video/355119368" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={buick} alt="Kirk Brothers Buick Gmc" />
