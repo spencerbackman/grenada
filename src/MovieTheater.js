@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles/css/movieTheater.css';
-import spiderMan from './images/SpiderMan_Far_from_Home169.jpg';
-import annabelle from './images/Annabelle_Comes_Home521.jpg';
-import toyStory from './images/Toy_Story_4560.jpg';
+import movie1 from './images/overcomer.jpg';
+import movie2 from './images/It_Chapter_Two240.jpg';
+import movie3 from './images/Scary_Stories_to_Tell_in_the_Dark508.jpg';
 import lionKing from './images/The_Lion_King607.jpg';
 import { Helmet } from 'react-helmet';
 
@@ -81,32 +81,34 @@ class MovieTheater extends React.Component {
                     <div className="playing-wrapper">
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie}>
-                                <img src={spiderMan} className="movie-image" alt="Spider-Man: Far from Home" />
-                                <h3 className="movie-title"> Spider-Man: Far from Home </h3>
+                                <img src={movie1} className="movie-image" alt="Overcomer" />
+                                <h3 className="movie-title"> Overcomer </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class}} id="movie">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={spiderMan} className="popup-movie-image" alt="Spider-Man: Far from Home" />
+                                            <img src={movie1} className="popup-movie-image" alt="Overcomer" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3" id="movie-header"> Spider-Man: Far from Home </h3>
+                                            <h3 className="movie-header3" id="movie-header"> Overcomer </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> PG-13 </p>
+                                                <p className="run-rating"> PG </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 2 h 9 m </p>
+                                                <p className="run-rating"> 2 h 4 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noopener noreferrer" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
-                                            <p className="movie-par" id="movie-par"> 	Peter Parker and his friends go on a summer trip to Europe. However, they will hardly be able to rest - Peter will have to agree to help Nick Fury uncover the mystery of creatures that cause natural disasters and destruction throughout the continent. </p> <br/>
-                                            <p className="movie-par " id="starring"> <strong className="strong"> Starring: </strong> Tom Holland, Jake Gyllenhaal, Michael Keaton, Zendaya, Samuel L. Jackson, Cobie Smulders </p> <br/>
-                                            <p className="movie-par" id="genre"> <strong className="strong"> Genres: </strong> Action, Adventure, Sci-Fi </p>
+                                            <p className="movie-par" id="movie-par"> 
+                                                Life changes overnight for Coach John Harrison when his high school basketball team and state championship dreams are crushed under the weight of unexpected news. When the largest manufacturing plant shuts down and hundreds of families leave their town, John questions how he and his family will face an uncertain future. After reluctantly agreeing to coach cross-country, John and his wife, Amy, meet an aspiring athlete who's pushing her limits on a journey toward discovery. Inspired by the words and prayers of a new-found friend, John becomes the least likely coach helping the least likely runner attempt the impossible in the biggest race of the year. 
+                                            </p> <br/>
+                                            <p className="movie-par " id="starring"> <strong className="strong"> Starring: </strong> Elizabeth Becka, Alex Kendrick, Ben Davies, Priscilla C. Shirer </p> <br/>
+                                            <p className="movie-par" id="genre"> <strong className="strong"> Genres: </strong> Drama </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Spider-Man: Far from Home" src="https://www.youtube.com/embed/DYYtuKyMtY8" className="movie-trailer" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Overcomer" src="https://www.youtube.com/embed/BGyieGVn4P4" className="movie-trailer" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -114,32 +116,34 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie2}>
-                                <img src={annabelle} className="movie-image" alt="Annabelle Comes Home" />
-                                <h3 className="movie-title"> Annabelle Comes Home </h3>
+                                <img src={movie2} className="movie-image" alt="It: Chapter Two" />
+                                <h3 className="movie-title"> It: Chapter Two </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class2}} id="movie2">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={annabelle} className="popup-movie-image" alt="Annabelle Comes Home" />
+                                            <img src={movie2} className="popup-movie-image" alt="It: Chapter Two" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"  id="movie-header2"> Annabelle Comes Home </h3>
+                                            <h3 className="movie-header3"  id="movie-header2"> It: Chapter Two </h3>
                                             <div className="run-rating-row">
                                                 <p className="run-rating"> R </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 46 m </p>
+                                                <p className="run-rating"> 2 h 49 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
-                                            <p className="movie-par" id="movie-par2"> 	Determined to keep Annabelle from wreaking more havoc, demonologists Ed and Lorraine Warren bring the possessed doll to the locked artifacts room in their home, placing her “safely” behind sacred glass and enlisting a priest’s holy blessing. But an unholy night of horror awaits as Annabelle awakens the evil spirits in the room, who all set their sights on a new target—the Warrens' ten-year-old daughter, Judy, and her friends. </p> <br />
-                                            <p className="movie-par" id="starring2"> <strong> Starring: </strong> Mckenna Grace, Madison Iseman, Patrick Wilson, Vera Farmiga, Emily Brobst, Stephen Blackehart </p> <br/>
-                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Horror </p>
+                                            <p className="movie-par" id="movie-par2">
+                                                27 years after overcoming the malevolent supernatural entity Pennywise, the former members of the Losers' Club, who have grown up and moved away from Derry, are brought back together by a devastating phone call. 
+                                            </p> <br />
+                                            <p className="movie-par" id="starring2"> <strong> Starring: </strong> 	James McAvoy, Jessica Chastain, Jay Ryan, Bill Hader, Isaiah Mustafa, James Ransone </p> <br/>
+                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Horror, Thriller </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Annabelle Comes Home" src="https://www.youtube.com/embed/EMa-KFfatT0" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="It: Chapter Two" src="https://www.youtube.com/embed/zqUopiAYdRg" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -147,8 +151,8 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie3}>
-                                <img src={toyStory} className="movie-image" alt="Toy Story 4" />
-                                <h3 className="movie-title"> Toy Story 4 </h3>
+                                <img src={movie3} className="movie-image" alt="Scary Stories to Tell in the Dark" />
+                                <h3 className="movie-title"> Scary Stories to Tell in the Dark</h3>
                             </div>
 
                             <div className="movie-popup" style={{display: this.state.class3}} id="movie3">
@@ -156,24 +160,26 @@ class MovieTheater extends React.Component {
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={toyStory} className="popup-movie-image" alt="Toy Story 4" />
+                                            <img src={movie3} className="popup-movie-image" alt="Scary Stories to Tell in the Dark" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"> Toy Story 4 </h3>
+                                            <h3 className="movie-header3"> Scary Stories to Tell in the Dark </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> G </p>
+                                                <p className="run-rating"> PG-13 </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 40 m </p>
+                                                <p className="run-rating"> 1 h 50 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
-                                            <p className="movie-par"> The Men in Black have always protected the Earth from the scum of the universe. In this new adventure, they tackle their biggest, most global threat to date: a mole in the Men in Black organization. </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> Tom Hanks, Tim Allen, Joan Cusack, Tony Hale, Estelle Harris, Wallace Shawn </p> <br />
-                                            <p className="movie-par"> <strong> Genres: </strong> Adventure, Comedy, Animation </p>
+                                            <p className="movie-par"> 
+                                                It's 1968 in America. Change is blowing in the wind...but seemingly far removed from the unrest in the cities is the small town of Mill Valley where for generations, the shadow of the Bellows family has loomed large. It is in their mansion on the edge of town that Sarah, a young girl with horrible secrets, turned her tortured life into a series of scary stories, written in a book that has transcended time-stories that have a way of becoming all too real for a group of teenagers who discover Sarah's terrifying tome.    
+                                            </p> <br/>
+                                            <p className="movie-par"> <strong> Starring: </strong> Zoe Colletti, Michael Garza, Austin Abrams, Gabriel Rush, Austin Zajur, Natalie Ganzhorn </p> <br />
+                                            <p className="movie-par"> <strong> Genres: </strong> Horror </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Toy Story 4" src="https://www.youtube.com/embed/wmiIUN-7qhE" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Scary Stories to Tell in the Dark" src="https://www.youtube.com/embed/N3J2k3Nhicw" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
