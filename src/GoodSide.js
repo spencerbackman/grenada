@@ -16,7 +16,7 @@ class GoodSide extends React.Component {
                 </Helmet>
                 <div class="tv-top-container">
                     <h1 class="tv-header"> The Good Side </h1>
-                    <iframe title="vimeo-player The Good Side" src="https://player.vimeo.com/video/320828946" frameBorder="0" allowFullScreen></iframe>
+                    <iframe title="Good side of Grenada - T&Z Wings" src="https://player.vimeo.com/video/362062854" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                 </div>
                 <div class="tv-mid-container">
                     <h2 class="tv-header2"> Missed an Episode? </h2>
@@ -27,6 +27,7 @@ class GoodSide extends React.Component {
                     <a class="tv-video-link" href="https://vimeo.com/271692600" target="_blank" rel="noopener noreferrer"> Episode 5 </a>
                     <a class="tv-video-link" href="https://vimeo.com/287733770" target="_blank" rel="noopener noreferrer"> Episode 6 </a>
                     <a class="tv-video-link" href="https://vimeo.com/319323644" target="_blank" rel="noopener noreferrer"> Episode 7 </a>
+                    <a className="tv-video-link" href="https://vimeo.com/320828946" target="_blank" rel="noopener noreferrer"> Episode 8 </a>
                 </div>
             </div>
         )

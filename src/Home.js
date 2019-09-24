@@ -11,7 +11,7 @@ import shop from './images/shop.png';
 import missAd from './images/ole-miss_DigitalAd.png';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import './styles/css/home.css';
+import './styles/scss/home.scss';
 
 class Home extends React.Component {
     componentDidMount() {
@@ -34,10 +34,10 @@ class Home extends React.Component {
                 </div>
                 <a className="weatherwidget-io" target="_blank" rel="noreferrer noopener" href="https://forecast7.com/en/33d77n89d81/grenada/?unit=us" data-label_1="GRENADA" data-label_2="WEATHER" data-theme="clear" data-basecolor="rgba(242, 242, 242, 1)" >GRENADA WEATHER</a>
                 <div className="carousel-container">
-                    <a className="ad-link" href="http://www.outreach.olemiss.edu/grenada/?utm_source=online&utm_medium=webad&utm_campaign=umgspring2019&utm_content=web_lg2" target="_blank" rel="noopener noreferrer">
+                    <a className="banner-container" href="http://www.outreach.olemiss.edu/grenada/?utm_source=online&utm_medium=webad&utm_campaign=umgspring2019&utm_content=web_lg2" target="_blank" rel="noopener noreferrer">
                         <img src={missAd} alt="Ole Miss Ad"/> 
                     </a>
-                    <a className="ad-link" href="https://www.holmescc.edu/" target="_blank" rel="noopener noreferrer">
+                    <a className="banner-container" href="https://www.holmescc.edu/" target="_blank" rel="noopener noreferrer">
                         <img src={holmesAd} alt="Holmes Community College Ad"/>
                     </a>
                 </div>
@@ -58,8 +58,8 @@ class Home extends React.Component {
                         </a>
                     </div>
                     <div className="main-video-holder">
+                        <iframe className="main-video" title="Good side of Grenada - T&Z Wings" src="https://player.vimeo.com/video/362062854" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                         <iframe className="main-video" title="Grenada Baseball World Series Champs" src="https://player.vimeo.com/video/347786648" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
-                        <iframe className="main-video" title="Local Grenada Upcoming Event - Fox Hunt" src="https://player.vimeo.com/video/350843530" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                     </div>
                 </div>
                 <div className="home-container">
