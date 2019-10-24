@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles/css/movieTheater.css';
-import movie1 from './images/overcomer.jpg';
-import movie2 from './images/It_Chapter_Two240.jpg';
-import movie3 from './images/Scary_Stories_to_Tell_in_the_Dark508.jpg';
-import lionKing from './images/The_Lion_King607.jpg';
+import movie1 from './images/Zombieland_Double_Tap425.jpg';
+import movie2 from './images/Maleficent_Mistress_of_Evil262.jpg';
+import movie3 from './images/The_Addams_Family322.jpg';
+import movie4 from './images/Gemini_Man804.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -81,34 +81,34 @@ class MovieTheater extends React.Component {
                     <div className="playing-wrapper">
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie}>
-                                <img src={movie1} className="movie-image" alt="Overcomer" />
-                                <h3 className="movie-title"> Overcomer </h3>
+                                <img src={movie1} className="movie-image" alt="Zombieland: Double Tap" />
+                                <h3 className="movie-title"> Zombieland: Double Tap </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class}} id="movie">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie1} className="popup-movie-image" alt="Overcomer" />
+                                            <img src={movie1} className="popup-movie-image" alt="Zombieland: Double Tap" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3" id="movie-header"> Overcomer </h3>
+                                            <h3 className="movie-header3" id="movie-header"> Zombieland: Double Tap </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> PG </p>
+                                                <p className="run-rating"> R </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 2 h 4 m </p>
+                                                <p className="run-rating"> 1 h 33 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noopener noreferrer" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par" id="movie-par"> 
-                                                Life changes overnight for Coach John Harrison when his high school basketball team and state championship dreams are crushed under the weight of unexpected news. When the largest manufacturing plant shuts down and hundreds of families leave their town, John questions how he and his family will face an uncertain future. After reluctantly agreeing to coach cross-country, John and his wife, Amy, meet an aspiring athlete who's pushing her limits on a journey toward discovery. Inspired by the words and prayers of a new-found friend, John becomes the least likely coach helping the least likely runner attempt the impossible in the biggest race of the year. 
+                                                The group will face a new zombie threat as a new breed of zombie has developed. This new super-zombie type is faster, bigger, and stronger than the previous strain of zombies and harder to kill. These super-zombies have started grouping up into a horde going from city to city leaving a path of destruction behind them.
                                             </p> <br/>
-                                            <p className="movie-par " id="starring"> <strong className="strong"> Starring: </strong> Elizabeth Becka, Alex Kendrick, Ben Davies, Priscilla C. Shirer </p> <br/>
-                                            <p className="movie-par" id="genre"> <strong className="strong"> Genres: </strong> Drama </p>
+                                            <p className="movie-par " id="starring"> <strong className="strong"> Starring: </strong> Jesse Eisenberg, Woody Harrelson, Emma Stone, Abigail Breslin, Rosario Dawson, Zoey Deutch </p> <br/>
+                                            <p className="movie-par" id="genre"> <strong className="strong"> Genres: </strong> Horror, Comedy </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Overcomer" src="https://www.youtube.com/embed/BGyieGVn4P4" className="movie-trailer" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Zombieland: Double Tap" src="https://www.youtube.com/embed/ZlW9yhUKlkQ" className="movie-trailer" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -116,89 +116,18 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie2}>
-                                <img src={movie2} className="movie-image" alt="It: Chapter Two" />
-                                <h3 className="movie-title"> It: Chapter Two </h3>
+                                <img src={movie2} className="movie-image" alt="Maleficent: Mistress of Evil" />
+                                <h3 className="movie-title"> Maleficent: Mistress of Evil </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class2}} id="movie2">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie2} className="popup-movie-image" alt="It: Chapter Two" />
+                                            <img src={movie2} className="popup-movie-image" alt="Maleficent: Mistress of Evil" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"  id="movie-header2"> It: Chapter Two </h3>
-                                            <div className="run-rating-row">
-                                                <p className="run-rating"> R </p>
-                                                <div className="seperator"></div>
-                                                <p className="run-rating"> 2 h 49 m </p>
-                                                <div className="seperator"></div>
-                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
-                                            </div>
-                                            <p className="movie-par" id="movie-par2">
-                                                27 years after overcoming the malevolent supernatural entity Pennywise, the former members of the Losers' Club, who have grown up and moved away from Derry, are brought back together by a devastating phone call. 
-                                            </p> <br />
-                                            <p className="movie-par" id="starring2"> <strong> Starring: </strong> 	James McAvoy, Jessica Chastain, Jay Ryan, Bill Hader, Isaiah Mustafa, James Ransone </p> <br/>
-                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Horror, Thriller </p>
-                                        </div>
-                                    </div>
-                                    <div className="trailer-holder">
-                                        <iframe title="It: Chapter Two" src="https://www.youtube.com/embed/zqUopiAYdRg" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="movie-wrapper">
-                            <div className="movie-container" onClick={this.openMovie3}>
-                                <img src={movie3} className="movie-image" alt="Scary Stories to Tell in the Dark" />
-                                <h3 className="movie-title"> Scary Stories to Tell in the Dark</h3>
-                            </div>
-
-                            <div className="movie-popup" style={{display: this.state.class3}} id="movie3">
-                                <div className="movie-popup-content">
-                                    <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
-                                    <div className="movie-info-row">
-                                        <div className="movie-column">
-                                            <img src={movie3} className="popup-movie-image" alt="Scary Stories to Tell in the Dark" />
-                                        </div>
-                                        <div className="movie-column">
-                                            <h3 className="movie-header3"> Scary Stories to Tell in the Dark </h3>
-                                            <div className="run-rating-row">
-                                                <p className="run-rating"> PG-13 </p>
-                                                <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 50 m </p>
-                                                <div className="seperator"></div>
-                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
-                                            </div>
-                                            <p className="movie-par"> 
-                                                It's 1968 in America. Change is blowing in the wind...but seemingly far removed from the unrest in the cities is the small town of Mill Valley where for generations, the shadow of the Bellows family has loomed large. It is in their mansion on the edge of town that Sarah, a young girl with horrible secrets, turned her tortured life into a series of scary stories, written in a book that has transcended time-stories that have a way of becoming all too real for a group of teenagers who discover Sarah's terrifying tome.    
-                                            </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> Zoe Colletti, Michael Garza, Austin Abrams, Gabriel Rush, Austin Zajur, Natalie Ganzhorn </p> <br />
-                                            <p className="movie-par"> <strong> Genres: </strong> Horror </p>
-                                        </div>
-                                    </div>
-                                    <div className="trailer-holder">
-                                        <iframe title="Scary Stories to Tell in the Dark" src="https://www.youtube.com/embed/N3J2k3Nhicw" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="movie-wrapper">
-                            <div className="movie-container" onClick={this.openMovie4}>
-                                <img src={lionKing} className="movie-image" alt="The Lion King" />
-                                <h3 className="movie-title"> The Lion King </h3>
-                            </div>
-                            <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
-                                <div className="movie-popup-content">
-                                    <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
-                                    <div className="movie-info-row">
-                                        <div className="movie-column">
-                                            <img src={lionKing} className="popup-movie-image" alt="The Lion King" />
-                                        </div>
-                                        <div className="movie-column">
-                                            <h3 className="movie-header3"> The Lion King </h3>
+                                            <h3 className="movie-header3"  id="movie-header2"> Maleficent: Mistress of Evil </h3>
                                             <div className="run-rating-row">
                                                 <p className="run-rating"> PG </p>
                                                 <div className="seperator"></div>
@@ -206,13 +135,86 @@ class MovieTheater extends React.Component {
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
-                                            <p className="movie-par"> Simba idolises his father, King Mufasa, and takes to heart his own royal destiny. But not everyone in the kingdom celebrates the new cub's arrival. Scar, Mufasa's brother and former heir to the throne has plans of his own. The battle for Pride Rock is ravaged with betrayal, tragedy and drama, ultimately resulting in Simba's exile. With help from a curious pair of newfound friends, Simba will have to figure out how to grow up and take back what is rightfully his. </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> 	Donald Glover, Beyonce Knowles, James Earl Jones, Chiwetel Ejiofor, Alfre Woodard, John Oliver </p> <br/>
-                                            <p className="movie-par"> <strong> Genres: </strong> Adventure, Family, Animation </p> <br/> <br/>
+                                            <p className="movie-par" id="movie-par2">
+                                                A fantasy adventure that picks up several years after Maleficent, in which audiences learned of the events that hardened the heart of Disney's most notorious villain and drove her to curse a baby Princess Aurora, Maleficent: Mistress of Evil continues to explore the complex relationship between the horned fairy and the soon to be Queen, as they form new alliances and face new adversaries in their struggle to protect the moors and the magical creatures that reside within.
+                                            </p> <br />
+                                            <p className="movie-par" id="starring2"> <strong> Starring: </strong> Angelina Jolie, Elle Fanning, Michelle Pfeiffer, Harris Dickinson, Chiwetel Ejiofor, Ed Skrein </p> <br/>
+                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Fantasy, Family </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="The Lion King" src="https://www.youtube.com/embed/4CbLXeGSDxg" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Maleficent: Mistress of Evil" src="https://www.youtube.com/embed/5MwW1NAsnR8" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="movie-wrapper">
+                            <div className="movie-container" onClick={this.openMovie3}>
+                                <img src={movie3} className="movie-image" alt="The Addams Family" />
+                                <h3 className="movie-title"> The Addams Family </h3>
+                            </div>
+
+                            <div className="movie-popup" style={{display: this.state.class3}} id="movie3">
+                                <div className="movie-popup-content">
+                                    <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
+                                    <div className="movie-info-row">
+                                        <div className="movie-column">
+                                            <img src={movie3} className="popup-movie-image" alt="The Addams Family" />
+                                        </div>
+                                        <div className="movie-column">
+                                            <h3 className="movie-header3"> The Addams Family </h3>
+                                            <div className="run-rating-row">
+                                                <p className="run-rating"> PG-13 </p>
+                                                <div className="seperator"></div>
+                                                <p className="run-rating"> 1 h 27 m </p>
+                                                <div className="seperator"></div>
+                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
+                                            </div>
+                                            <p className="movie-par"> 
+                                                The Addams family's lives begin to unravel when they face-off against a treacherous, greedy crafty reality-TV host while also preparing for their extended family to arrive for a major celebration.    
+                                            </p> <br/>
+                                            <p className="movie-par"> <strong> Starring: </strong> 	Oscar Isaac, Charlize Theron, Chloe Grace Moretz, Finn Wolfhard, Nick Kroll, Bette Midler </p> <br />
+                                            <p className="movie-par"> <strong> Genres: </strong> Comedy </p>
+                                        </div>
+                                    </div>
+                                    <div className="trailer-holder">
+                                        <iframe title="The Addams Family" src="https://www.youtube.com/embed/c95edsw17QE" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="movie-wrapper">
+                            <div className="movie-container" onClick={this.openMovie4}>
+                                <img src={movie4} className="movie-image" alt="Gemini Man" />
+                                <h3 className="movie-title"> Gemini Man </h3>
+                            </div>
+                            <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
+                                <div className="movie-popup-content">
+                                    <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
+                                    <div className="movie-info-row">
+                                        <div className="movie-column">
+                                            <img src={movie4} className="popup-movie-image" alt="Gemini Man" />
+                                        </div>
+                                        <div className="movie-column">
+                                            <h3 className="movie-header3"> Gemini Man </h3>
+                                            <div className="run-rating-row">
+                                                <p className="run-rating"> PG-13 </p>
+                                                <div className="seperator"></div>
+                                                <p className="run-rating"> 1 h 57 m </p>
+                                                <div className="seperator"></div>
+                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
+                                            </div>
+                                            <p className="movie-par"> 
+                                                Henry Brogen, an aging assassin tries to get out of the business but finds himself in the ultimate battle: fighting his own clone who is 25 years younger than him and at the peak of his abilities.
+                                            </p> <br/>
+                                            <p className="movie-par"> <strong> Starring: </strong> 	Will Smith, Mary Elizabeth Winstead, Clive Owen, Benedict Wong, Linda Emond, Theodora Miranne </p> <br/>
+                                            <p className="movie-par"> <strong> Genres: </strong> Action, Drama, Sci-Fi </p> <br/> <br/>
+                                        </div>
+                                    </div>
+                                    <div className="trailer-holder">
+                                        <iframe title="Gemini Man" src="https://www.youtube.com/embed/AbyJignbSj0" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
