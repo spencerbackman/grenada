@@ -3,7 +3,7 @@ import './styles/css/movieTheater.css';
 import movie1 from './images/Zombieland_Double_Tap425.jpg';
 import movie2 from './images/Maleficent_Mistress_of_Evil262.jpg';
 import movie3 from './images/The_Addams_Family322.jpg';
-import movie4 from './images/Gemini_Man804.jpg';
+import movie4 from './images/Terminator_Dark_Fate567.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -79,6 +79,42 @@ class MovieTheater extends React.Component {
                 </div>
                 <div className="movie-mid-wrapper">
                     <div className="playing-wrapper">
+
+                        <div className="movie-wrapper">
+                            <div className="movie-container" onClick={this.openMovie4}>
+                                <img src={movie4} className="movie-image" alt="Terminator: Dark Fate" />
+                                <h3 className="movie-title"> Terminator: Dark Fate </h3>
+                            </div>
+                            <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
+                                <div className="movie-popup-content">
+                                    <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
+                                    <div className="movie-info-row">
+                                        <div className="movie-column">
+                                            <img src={movie4} className="popup-movie-image" alt="Terminator: Dark Fate" />
+                                        </div>
+                                        <div className="movie-column">
+                                            <h3 className="movie-header3"> Terminator: Dark Fate </h3>
+                                            <div className="run-rating-row">
+                                                <p className="run-rating"> R </p>
+                                                <div className="seperator"></div>
+                                                <p className="run-rating"> 2 h 8 m </p>
+                                                <div className="seperator"></div>
+                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
+                                            </div>
+                                            <p className="movie-par"> 
+                                                27 years after the events of Terminator 2: Judgment Day, a new, modified liquid metal Terminator is sent from the future by Skynet in order to terminate Dani Ramos, a hybrid cyborg human, and her friends. Sarah  Connor comes to their aid, as well as the original Terminator, for a fight for the future.
+                                            </p> <br/>
+                                            <p className="movie-par"> <strong> Starring: </strong> 	Natalia Reyes, Mackenzie Davis, Linda Hamilton, Arnold Schwarzenegger, Edward Furlong, Diego Boneta </p> <br/>
+                                            <p className="movie-par"> <strong> Genres: </strong> Action, Adventure, Sci-Fi </p> <br/> <br/>
+                                        </div>
+                                    </div>
+                                    <div className="trailer-holder">
+                                        <iframe title="Terminator: Dark Fate" src="https://www.youtube.com/embed/oxy8udgWRmo" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie}>
                                 <img src={movie1} className="movie-image" alt="Zombieland: Double Tap" />
@@ -185,40 +221,7 @@ class MovieTheater extends React.Component {
                             </div>
                         </div>
 
-                        <div className="movie-wrapper">
-                            <div className="movie-container" onClick={this.openMovie4}>
-                                <img src={movie4} className="movie-image" alt="Gemini Man" />
-                                <h3 className="movie-title"> Gemini Man </h3>
-                            </div>
-                            <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
-                                <div className="movie-popup-content">
-                                    <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
-                                    <div className="movie-info-row">
-                                        <div className="movie-column">
-                                            <img src={movie4} className="popup-movie-image" alt="Gemini Man" />
-                                        </div>
-                                        <div className="movie-column">
-                                            <h3 className="movie-header3"> Gemini Man </h3>
-                                            <div className="run-rating-row">
-                                                <p className="run-rating"> PG-13 </p>
-                                                <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 57 m </p>
-                                                <div className="seperator"></div>
-                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
-                                            </div>
-                                            <p className="movie-par"> 
-                                                Henry Brogen, an aging assassin tries to get out of the business but finds himself in the ultimate battle: fighting his own clone who is 25 years younger than him and at the peak of his abilities.
-                                            </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> 	Will Smith, Mary Elizabeth Winstead, Clive Owen, Benedict Wong, Linda Emond, Theodora Miranne </p> <br/>
-                                            <p className="movie-par"> <strong> Genres: </strong> Action, Drama, Sci-Fi </p> <br/> <br/>
-                                        </div>
-                                    </div>
-                                    <div className="trailer-holder">
-                                        <iframe title="Gemini Man" src="https://www.youtube.com/embed/AbyJignbSj0" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                     {/* <h2 className="movie-header2"> Ticket Pricing </h2> */}
