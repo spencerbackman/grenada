@@ -34,11 +34,11 @@ class Business extends React.Component {
                         <div className="business-container">
                             <div className="business-box">
                                 <img className="business-partner-logo" src={KirkAutoCo} alt="Kirk Auto Company"/>
-                                <iframe src="https://player.vimeo.com/video/325247476" title="Kirk Auto Company Lincoln" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                                <iframe src="https://player.vimeo.com/video/365621330" title="Kirk Auto Company Lincoln" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={grenadaDental} alt="Grenada Dental Associates" />
-                                <iframe title="vimeo-player Grenada Dental Associates January 2019" src="https://player.vimeo.com/video/309533922" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player Grenada Dental Associates January 2019" src="https://player.vimeo.com/video/360892714" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={grenadaBadBoys} alt="Grenada Bad Boys" />
@@ -54,11 +54,11 @@ class Business extends React.Component {
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={kirkSun} alt="Kirk Brothers Sunset - Chrysler, Dodge, Jeep, Ram" />
-                                <iframe src="https://player.vimeo.com/video/358372209" title="vimeo-player Kirk Brothers Sunset - Chrysler, Dodge, Jeep, Ram" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                                <iframe src="https://player.vimeo.com/video/366340894" title="vimeo-player Kirk Brothers Sunset - Chrysler, Dodge, Jeep, Ram" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={sayle} alt="Sayle Oil Co." />
-                                <iframe title="vimeo-player Sayle Oil Co." src="https://player.vimeo.com/video/355373266" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player Sayle Oil Co." src="https://player.vimeo.com/video/367032509" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" id="caldwell-logo" src={caldwell} alt="Caldwell Tree Service" />
@@ -66,7 +66,7 @@ class Business extends React.Component {
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={kirkToy} alt="Kirk Brothers Toyota" />
-                                <iframe title="vimeo-player Kirk Brothers Toyota" src="https://player.vimeo.com/video/354277897" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player Kirk Brothers Toyota" src="https://player.vimeo.com/video/365120789" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={csbLogo} alt="Cleveland State Bank" />
@@ -86,7 +86,7 @@ class Business extends React.Component {
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" id="nsmc-logo" src={nsmc} alt="North Sunflower Medical Clinic" />
-                                <iframe title="vimeo-player North Sunflower Medical Clinic" src="https://player.vimeo.com/video/333811766" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player North Sunflower Medical Clinic" src="https://player.vimeo.com/video/362629595" frameBorder="0" allowFullScreen></iframe>
                             </div>
                             <div className="business-box">
                                 <h2 className="business-header2"> Winona Tractor & Equipment </h2>
@@ -94,7 +94,7 @@ class Business extends React.Component {
                             </div>
                             <div className="business-box">
                                 <img className="business-partner-logo" src={buick} alt="Kirk Brothers Buick Gmc" />
-                                <iframe title="vimeo-player Kirk Brothers Buick Gmc" src="https://player.vimeo.com/video/333972567" frameBorder="0" allowFullScreen></iframe>
+                                <iframe title="vimeo-player Kirk Brothers Buick Gmc" src="https://player.vimeo.com/video/340976866" frameBorder="0" allowFullScreen></iframe>
                             </div>
                         </div>
                     </div>

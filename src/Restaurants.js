@@ -43,7 +43,7 @@ class Restaurants extends React.Component {
                     <div className="food-container">
                         <div className="food-box">
                             <img className="food-partner-logo" src={tzLogo} alt="T&Z Wings" />
-                            <iframe title="vimeo-player T&Z Wings" src="https://player.vimeo.com/video/310376432" frameBorder="0" allowFullScreen></iframe>
+                            <iframe title="vimeo-player T&Z Wings" src="https://player.vimeo.com/video/363630695" frameBorder="0" allowFullScreen></iframe>
                         </div>
                         <div className="food-box">
                             <img className="food-partner-logo" src={spencerLogo} alt="Spencer's" />
