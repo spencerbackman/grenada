@@ -4,6 +4,7 @@ import movie1 from './images/Zombieland_Double_Tap425.jpg';
 import movie2 from './images/Maleficent_Mistress_of_Evil262.jpg';
 import movie3 from './images/The_Addams_Family322.jpg';
 import movie4 from './images/Terminator_Dark_Fate567.jpg';
+import movie5 from './images/Arctic_Dogs520.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -13,7 +14,8 @@ class MovieTheater extends React.Component {
             class: 'none',
             class2: 'none',
             class3: 'none',
-            class4: 'none'
+            class4: 'none',
+            class5: 'none'
         }
     }
     componentDidMount() {
@@ -24,7 +26,8 @@ class MovieTheater extends React.Component {
             class: 'block',
             class2: 'none',
             class3: 'none',
-            class4: 'none'
+            class4: 'none',
+            class5: 'none'
         })
     }
     closeMovie = () => {
@@ -32,7 +35,8 @@ class MovieTheater extends React.Component {
             class: 'none',
             class2: 'none',
             class3: 'none',
-            class4: 'none'
+            class4: 'none',
+            class5: 'none'
         })
     }
     openMovie2 = () => {
@@ -40,7 +44,8 @@ class MovieTheater extends React.Component {
             class: 'none',
             class2: 'block',
             class3: 'none',
-            class4: 'none'
+            class4: 'none',
+            class5: 'none'
         })
     }
     openMovie3 = () => {
@@ -48,7 +53,8 @@ class MovieTheater extends React.Component {
             class: 'none',
             class2: 'none',
             class3: 'block',
-            class4: 'none'
+            class4: 'none',
+            class5: 'none'
         })
     }
     openMovie4 = () => {
@@ -56,7 +62,17 @@ class MovieTheater extends React.Component {
             class: 'none',
             class2: 'none',
             class3: 'none',
-            class4: 'block'
+            class4: 'block',
+            class5: 'none'
+        })
+    }
+    openMovie5 = () => {
+        this.setState({
+            class: 'none',
+            class2: 'none',
+            class3: 'none',
+            class4: 'none',
+            class5: 'block'
         })
     }
     render() { 
@@ -79,6 +95,47 @@ class MovieTheater extends React.Component {
                 </div>
                 <div className="movie-mid-wrapper">
                     <div className="playing-wrapper">
+
+                        <div className="movie-wrapper">
+                            <div className="movie-container" onClick={this.openMovie5}>
+                                <img src={movie5} className="movie-image" alt="Artic Dogs"/>
+                                <h3 className="movie-title"> Artic Dogs </h3>
+                            </div>
+                            <div className="movie-popup" style={{display: this.state.class5}} id="movie5">
+                                <div className="movie-popup-content">
+                                    <div className="popupCloseButton" onClick={this.closeMovie}> X </div>
+                                    <div className="movie-info-row">
+                                        <div className="movie-column">
+                                            <img src={movie5} className="popup-movie-image" alt="Artic Dogs"/>
+                                        </div>
+                                        <div className="movie-column">
+                                            <h3 className="movie-header3"> Artic Dogs </h3>
+                                            <div className="run-rating-row">
+                                                <p className="run-rating"> PG </p>
+                                                <div className="seperator"></div>
+                                                <p className="run-rating"> 1 h 33 m </p>
+                                                <div className="seperator"></div>
+                                                <p className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </p>
+                                            </div>
+                                            <p className="movie-par">
+                                                Swifty the Arctic Fox works in the mailroom of the Arctic Blast Delivery Service but dreams of one day becoming a Top Dog (the Arctic's star husky courier). To prove himself worthy of the Top Dog role, Swifty secretly commandeers one of the sleds and delivers a mysterious package to a secret location. He stumbles upon a hidden fortress, where he comes face to face with Otto Von Walrus, a blubbery evil genius, who walks around on mechanical legs and commands a loyal army of oddly polite puffin henchmen. Swifty soon discovers Otto Von Walrus' plan to drill beneath Arctic surface to unleash enough ancient gas to melt the Arctic, in order to reign as the world's supreme leader. Now, Swifty has to enlist the help of his friends: PB, an introverted polar bear, Lemmy, a scatterbrained albatross, Sal and Weez, two conspiracy theorist otters and Jade Fox, a tough as nails mechanic. This ragtag group of Arctic misfits has to band together to stop Otto Von Walrus' sinister plans and save the day.
+                                            </p> <br/>
+                                            <p className="movie-par">
+                                                <strong> Starring: </strong>
+                                                James Franco, Jeremy Renner, Alec Baldwin, Anjelica Huston, Michael Madsen, Heidi Klum
+                                            </p>
+                                            <p className="movie-par">
+                                                <strong> Genres: </strong>
+                                                Comedy, Adventure, Animation
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="trailer-holder">
+                                        <iframe title="Artic Dogs" src="https://www.youtube.com/embed/_2Wn0mwoJJA" className="movie-trailer" frameBorder="0" allowFullScreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie4}>
