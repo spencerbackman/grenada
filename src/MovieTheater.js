@@ -5,6 +5,8 @@ import movie2 from './images/Maleficent_Mistress_of_Evil262.jpg';
 import movie3 from './images/The_Addams_Family322.jpg';
 import movie4 from './images/Terminator_Dark_Fate567.jpg';
 import movie5 from './images/Arctic_Dogs520.jpg';
+import movie6 from './images/Playing_with_Fire358.jpg';
+import movie7 from './images/Doctor_Sleep483.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -15,7 +17,9 @@ class MovieTheater extends React.Component {
             class2: 'none',
             class3: 'none',
             class4: 'none',
-            class5: 'none'
+            class5: 'none',
+            class6: 'none',
+            class7: 'none'
         }
     }
     componentDidMount() {
@@ -27,7 +31,9 @@ class MovieTheater extends React.Component {
             class2: 'none',
             class3: 'none',
             class4: 'none',
-            class5: 'none'
+            class5: 'none',
+            class6: 'none',
+            class7: 'none'
         })
     }
     closeMovie = () => {
@@ -36,7 +42,9 @@ class MovieTheater extends React.Component {
             class2: 'none',
             class3: 'none',
             class4: 'none',
-            class5: 'none'
+            class5: 'none',
+            class6: 'none',
+            class7: 'none'
         })
     }
     openMovie2 = () => {
@@ -45,7 +53,9 @@ class MovieTheater extends React.Component {
             class2: 'block',
             class3: 'none',
             class4: 'none',
-            class5: 'none'
+            class5: 'none',
+            class6: 'none',
+            class7: 'none'
         })
     }
     openMovie3 = () => {
@@ -54,7 +64,9 @@ class MovieTheater extends React.Component {
             class2: 'none',
             class3: 'block',
             class4: 'none',
-            class5: 'none'
+            class5: 'none',
+            class6: 'none',
+            class7: 'none'
         })
     }
     openMovie4 = () => {
@@ -63,7 +75,9 @@ class MovieTheater extends React.Component {
             class2: 'none',
             class3: 'none',
             class4: 'block',
-            class5: 'none'
+            class5: 'none',
+            class6: 'none',
+            class7: 'none'
         })
     }
     openMovie5 = () => {
@@ -72,7 +86,31 @@ class MovieTheater extends React.Component {
             class2: 'none',
             class3: 'none',
             class4: 'none',
-            class5: 'block'
+            class5: 'block',
+            class6: 'none',
+            class7: 'none'
+        })
+    }
+    openMovie6 = () => {
+        this.setState({
+            class: 'none',
+            class2: 'none',
+            class3: 'none',
+            class4: 'none',
+            class5: 'none',
+            class6: 'block',
+            class7: 'none'
+        })
+    }
+    openMovie7 = () => {
+        this.setState({
+            class: 'none',
+            class2: 'none',
+            class3: 'none',
+            class4: 'none',
+            class5: 'none',
+            class6: 'none',
+            class7: 'block'
         })
     }
     render() { 
@@ -95,7 +133,86 @@ class MovieTheater extends React.Component {
                 </div>
                 <div className="movie-mid-wrapper">
                     <div className="playing-wrapper">
-
+                        <div className="movie-wrapper">
+                            <div className="movie-container" onClick={this.openMovie7}>
+                                <img src={movie7} className="movie-image" alt="Doctor Sleep"/>
+                                <h3 className="movie-title"> Doctor Sleep </h3>
+                            </div>
+                            <div className="movie-popup" style={{display: this.state.class7}} id="movie7">
+                                <div className="movie-popup-content">
+                                    <div className="popupCloseButton" onClick={this.closeMovie}> X </div>
+                                    <div className="movie-info-row">
+                                        <div className="movie-column">
+                                            <img src={movie7} className="popup-movie-image" alt="Doctor Sleep"/>
+                                        </div>
+                                        <div className="movie-column">
+                                            <h3 className="movie-header3"> Doctor Sleep </h3>
+                                            <div className="run-rating-row">
+                                                <p className="run-rating"> R </p>
+                                                <div className="seperator"></div>
+                                                <p className="run-rating"> 2 h 31 m </p>
+                                                <div className="seperator"></div>
+                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
+                                            </div>
+                                            <p className="movie-par">
+                                                Years following the events of "The Shining", an now-adult Dan Torrence meets a young girl with similar powers as his and tries to protect her from a cult known as The True Knots who prey on children with powers to remain immortal.
+                                            </p>
+                                            <p className="movie-par">
+                                                <strong> Starring: </strong>
+                                                Ewan McGregor, Kyliegh Curran, Rebecca Ferguson, Zahn McClarnon, Bruce Greenwood, Carel Struycken
+                                            </p>
+                                            <p className="movie-par">
+                                                <strong> Genres: </strong>
+                                                Horror
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="trailer-holder">
+                                        <iframe title="Doctor Sleep" src="https://www.youtube.com/embed/BOzFZxB-8cw" className="movie-trailer" frameBorder="0" allowFullScreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="movie-wrapper">
+                            <div className="movie-container" onClick={this.openMovie6}>
+                                <img src={movie6} className="movie-image" alt="Playing with Fire"/>
+                                <h3 className="movie-title"> Playing with Fire </h3>
+                            </div>
+                            <div className="movie-popup" style={{display: this.state.class6}} id="movie6">
+                                <div className="movie-popup-content">
+                                    <div className="popupCloseButton" onClick={this.closeMovie}> X </div>
+                                    <div className="movie-info-row">
+                                        <div className="movie-column">
+                                            <img src={movie6} className="popup-movie-image" alt="Playing with Fire"/>
+                                        </div>
+                                        <div className="movie-column">
+                                            <h3 className="movie-header3"> Playing with Fire </h3>
+                                            <div className="run-rating-row">
+                                                <p className="run-rating"> PG </p>
+                                                <div className="seperator"></div>
+                                                <p className="run-rating"> 1 h 36 m </p>
+                                                <div className="seperator"></div>
+                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
+                                            </div>
+                                            <p className="movie-par">
+                                                When straight-laced fire superintendent Jake Carson and his elite team of firefighters come to the rescue of three siblings, they quickly realize that no amount of training could prepare them for their most challenging job yet -- babysitting. As their lives, jobs and depot get turned upside down, the three men soon learn that children -- much like fires -- are wild and unpredictable.
+                                            </p>
+                                            <p className="movie-par">
+                                                <strong> Starring: </strong>
+                                                John Cena, Brianna Hildebrand, Keegan-Michael Key, Judy Greer, John Leguizamo, Tyler Mane
+                                            </p>
+                                            <p className="movie-par">
+                                                <strong> Genres: </strong>
+                                                Comedy
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div className="trailer-holder">
+                                        <iframe title="Playing with Fire" src="https://www.youtube.com/embed/fd5GlZUpfaM" className="movie-trailer" frameBorder="0" allowFullScreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie5}>
                                 <img src={movie5} className="movie-image" alt="Artic Dogs"/>
@@ -115,7 +232,7 @@ class MovieTheater extends React.Component {
                                                 <div className="seperator"></div>
                                                 <p className="run-rating"> 1 h 33 m </p>
                                                 <div className="seperator"></div>
-                                                <p className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </p>
+                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par">
                                                 Swifty the Arctic Fox works in the mailroom of the Arctic Blast Delivery Service but dreams of one day becoming a Top Dog (the Arctic's star husky courier). To prove himself worthy of the Top Dog role, Swifty secretly commandeers one of the sleds and delivers a mysterious package to a secret location. He stumbles upon a hidden fortress, where he comes face to face with Otto Von Walrus, a blubbery evil genius, who walks around on mechanical legs and commands a loyal army of oddly polite puffin henchmen. Swifty soon discovers Otto Von Walrus' plan to drill beneath Arctic surface to unleash enough ancient gas to melt the Arctic, in order to reign as the world's supreme leader. Now, Swifty has to enlist the help of his friends: PB, an introverted polar bear, Lemmy, a scatterbrained albatross, Sal and Weez, two conspiracy theorist otters and Jade Fox, a tough as nails mechanic. This ragtag group of Arctic misfits has to band together to stop Otto Von Walrus' sinister plans and save the day.
