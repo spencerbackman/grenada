@@ -1,12 +1,9 @@
 import React from 'react';
 import './styles/css/movieTheater.css';
-import movie1 from './images/Zombieland_Double_Tap425.jpg';
-import movie2 from './images/Maleficent_Mistress_of_Evil262.jpg';
-import movie3 from './images/The_Addams_Family322.jpg';
-import movie4 from './images/Terminator_Dark_Fate567.jpg';
-import movie5 from './images/Arctic_Dogs520.jpg';
-import movie6 from './images/Playing_with_Fire358.jpg';
-import movie7 from './images/Doctor_Sleep483.jpg';
+import movie1 from './images/Frozen_II227.jpg';
+import movie2 from './images/Ford_v_Ferrari936.jpg';
+import movie3 from './images/Charlies_Angels799.jpg';
+import movie4 from './images/Playing_with_Fire358.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -134,56 +131,16 @@ class MovieTheater extends React.Component {
                 <div className="movie-mid-wrapper">
                     <div className="playing-wrapper">
                         <div className="movie-wrapper">
-                            <div className="movie-container" onClick={this.openMovie7}>
-                                <img src={movie7} className="movie-image" alt="Doctor Sleep"/>
-                                <h3 className="movie-title"> Doctor Sleep </h3>
-                            </div>
-                            <div className="movie-popup" style={{display: this.state.class7}} id="movie7">
-                                <div className="movie-popup-content">
-                                    <div className="popupCloseButton" onClick={this.closeMovie}> X </div>
-                                    <div className="movie-info-row">
-                                        <div className="movie-column">
-                                            <img src={movie7} className="popup-movie-image" alt="Doctor Sleep"/>
-                                        </div>
-                                        <div className="movie-column">
-                                            <h3 className="movie-header3"> Doctor Sleep </h3>
-                                            <div className="run-rating-row">
-                                                <p className="run-rating"> R </p>
-                                                <div className="seperator"></div>
-                                                <p className="run-rating"> 2 h 31 m </p>
-                                                <div className="seperator"></div>
-                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
-                                            </div>
-                                            <p className="movie-par">
-                                                Years following the events of "The Shining", an now-adult Dan Torrence meets a young girl with similar powers as his and tries to protect her from a cult known as The True Knots who prey on children with powers to remain immortal.
-                                            </p>
-                                            <p className="movie-par">
-                                                <strong> Starring: </strong>
-                                                Ewan McGregor, Kyliegh Curran, Rebecca Ferguson, Zahn McClarnon, Bruce Greenwood, Carel Struycken
-                                            </p>
-                                            <p className="movie-par">
-                                                <strong> Genres: </strong>
-                                                Horror
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="trailer-holder">
-                                        <iframe title="Doctor Sleep" src="https://www.youtube.com/embed/BOzFZxB-8cw" className="movie-trailer" frameBorder="0" allowFullScreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="movie-wrapper">
-                            <div className="movie-container" onClick={this.openMovie6}>
-                                <img src={movie6} className="movie-image" alt="Playing with Fire"/>
+                            <div className="movie-container" onClick={this.openMovie4}>
+                                <img src={movie4} className="movie-image" alt="Playing with Fire" />
                                 <h3 className="movie-title"> Playing with Fire </h3>
                             </div>
-                            <div className="movie-popup" style={{display: this.state.class6}} id="movie6">
+                            <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
                                 <div className="movie-popup-content">
-                                    <div className="popupCloseButton" onClick={this.closeMovie}> X </div>
+                                    <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie6} className="popup-movie-image" alt="Playing with Fire"/>
+                                            <img src={movie4} className="popup-movie-image" alt="Playing with Fire" />
                                         </div>
                                         <div className="movie-column">
                                             <h3 className="movie-header3"> Playing with Fire </h3>
@@ -194,96 +151,15 @@ class MovieTheater extends React.Component {
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
-                                            <p className="movie-par">
-                                                When straight-laced fire superintendent Jake Carson and his elite team of firefighters come to the rescue of three siblings, they quickly realize that no amount of training could prepare them for their most challenging job yet -- babysitting. As their lives, jobs and depot get turned upside down, the three men soon learn that children -- much like fires -- are wild and unpredictable.
-                                            </p>
-                                            <p className="movie-par">
-                                                <strong> Starring: </strong>
-                                                John Cena, Brianna Hildebrand, Keegan-Michael Key, Judy Greer, John Leguizamo, Tyler Mane
-                                            </p>
-                                            <p className="movie-par">
-                                                <strong> Genres: </strong>
-                                                Comedy
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="trailer-holder">
-                                        <iframe title="Playing with Fire" src="https://www.youtube.com/embed/fd5GlZUpfaM" className="movie-trailer" frameBorder="0" allowFullScreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="movie-wrapper">
-                            <div className="movie-container" onClick={this.openMovie5}>
-                                <img src={movie5} className="movie-image" alt="Artic Dogs"/>
-                                <h3 className="movie-title"> Artic Dogs </h3>
-                            </div>
-                            <div className="movie-popup" style={{display: this.state.class5}} id="movie5">
-                                <div className="movie-popup-content">
-                                    <div className="popupCloseButton" onClick={this.closeMovie}> X </div>
-                                    <div className="movie-info-row">
-                                        <div className="movie-column">
-                                            <img src={movie5} className="popup-movie-image" alt="Artic Dogs"/>
-                                        </div>
-                                        <div className="movie-column">
-                                            <h3 className="movie-header3"> Artic Dogs </h3>
-                                            <div className="run-rating-row">
-                                                <p className="run-rating"> PG </p>
-                                                <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 33 m </p>
-                                                <div className="seperator"></div>
-                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
-                                            </div>
-                                            <p className="movie-par">
-                                                Swifty the Arctic Fox works in the mailroom of the Arctic Blast Delivery Service but dreams of one day becoming a Top Dog (the Arctic's star husky courier). To prove himself worthy of the Top Dog role, Swifty secretly commandeers one of the sleds and delivers a mysterious package to a secret location. He stumbles upon a hidden fortress, where he comes face to face with Otto Von Walrus, a blubbery evil genius, who walks around on mechanical legs and commands a loyal army of oddly polite puffin henchmen. Swifty soon discovers Otto Von Walrus' plan to drill beneath Arctic surface to unleash enough ancient gas to melt the Arctic, in order to reign as the world's supreme leader. Now, Swifty has to enlist the help of his friends: PB, an introverted polar bear, Lemmy, a scatterbrained albatross, Sal and Weez, two conspiracy theorist otters and Jade Fox, a tough as nails mechanic. This ragtag group of Arctic misfits has to band together to stop Otto Von Walrus' sinister plans and save the day.
-                                            </p> <br/>
-                                            <p className="movie-par">
-                                                <strong> Starring: </strong>
-                                                James Franco, Jeremy Renner, Alec Baldwin, Anjelica Huston, Michael Madsen, Heidi Klum
-                                            </p>
-                                            <p className="movie-par">
-                                                <strong> Genres: </strong>
-                                                Comedy, Adventure, Animation
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="trailer-holder">
-                                        <iframe title="Artic Dogs" src="https://www.youtube.com/embed/_2Wn0mwoJJA" className="movie-trailer" frameBorder="0" allowFullScreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="movie-wrapper">
-                            <div className="movie-container" onClick={this.openMovie4}>
-                                <img src={movie4} className="movie-image" alt="Terminator: Dark Fate" />
-                                <h3 className="movie-title"> Terminator: Dark Fate </h3>
-                            </div>
-                            <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
-                                <div className="movie-popup-content">
-                                    <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
-                                    <div className="movie-info-row">
-                                        <div className="movie-column">
-                                            <img src={movie4} className="popup-movie-image" alt="Terminator: Dark Fate" />
-                                        </div>
-                                        <div className="movie-column">
-                                            <h3 className="movie-header3"> Terminator: Dark Fate </h3>
-                                            <div className="run-rating-row">
-                                                <p className="run-rating"> R </p>
-                                                <div className="seperator"></div>
-                                                <p className="run-rating"> 2 h 8 m </p>
-                                                <div className="seperator"></div>
-                                                <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
-                                            </div>
                                             <p className="movie-par"> 
-                                                27 years after the events of Terminator 2: Judgment Day, a new, modified liquid metal Terminator is sent from the future by Skynet in order to terminate Dani Ramos, a hybrid cyborg human, and her friends. Sarah  Connor comes to their aid, as well as the original Terminator, for a fight for the future.
+                                                When straight-laced fire superintendent Jake Carson and his elite team of firefighters come to the rescue of three siblings, they quickly realize that no amount of training could prepare them for their most challenging job yet -- babysitting. As their lives, jobs and depot get turned upside down, the three men soon learn that children -- much like fires -- are wild and unpredictable.
                                             </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> 	Natalia Reyes, Mackenzie Davis, Linda Hamilton, Arnold Schwarzenegger, Edward Furlong, Diego Boneta </p> <br/>
-                                            <p className="movie-par"> <strong> Genres: </strong> Action, Adventure, Sci-Fi </p> <br/> <br/>
+                                            <p className="movie-par"> <strong> Starring: </strong> John Cena, Brianna Hildebrand, Keegan-Michael Key, Judy Greer, John Leguizamo, Tyler Mane </p> <br/>
+                                            <p className="movie-par"> <strong> Genres: </strong> Comedy </p> <br/> <br/>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Terminator: Dark Fate" src="https://www.youtube.com/embed/oxy8udgWRmo" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Playing with Fire" src="https://www.youtube.com/embed/fd5GlZUpfaM" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -291,34 +167,34 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie}>
-                                <img src={movie1} className="movie-image" alt="Zombieland: Double Tap" />
-                                <h3 className="movie-title"> Zombieland: Double Tap </h3>
+                                <img src={movie1} className="movie-image" alt="Frozen II" />
+                                <h3 className="movie-title"> Frozen II </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class}} id="movie">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie1} className="popup-movie-image" alt="Zombieland: Double Tap" />
+                                            <img src={movie1} className="popup-movie-image" alt="Frozen II" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3" id="movie-header"> Zombieland: Double Tap </h3>
+                                            <h3 className="movie-header3" id="movie-header"> Frozen II </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> R </p>
+                                                <p className="run-rating"> PG </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 33 m </p>
+                                                <p className="run-rating"> 1 h 43 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noopener noreferrer" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par" id="movie-par"> 
-                                                The group will face a new zombie threat as a new breed of zombie has developed. This new super-zombie type is faster, bigger, and stronger than the previous strain of zombies and harder to kill. These super-zombies have started grouping up into a horde going from city to city leaving a path of destruction behind them.
+                                                    Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.
                                             </p> <br/>
-                                            <p className="movie-par " id="starring"> <strong className="strong"> Starring: </strong> Jesse Eisenberg, Woody Harrelson, Emma Stone, Abigail Breslin, Rosario Dawson, Zoey Deutch </p> <br/>
-                                            <p className="movie-par" id="genre"> <strong className="strong"> Genres: </strong> Horror, Comedy </p>
+                                            <p className="movie-par " id="starring"> <strong className="strong"> Starring: </strong> Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad, Sterling K. Brown, Evan Rachel Wood </p> <br/>
+                                            <p className="movie-par" id="genre"> <strong className="strong"> Genres: </strong> Adventure, Comedy, Animation </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Zombieland: Double Tap" src="https://www.youtube.com/embed/ZlW9yhUKlkQ" className="movie-trailer" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Frozen II" src="https://www.youtube.com/embed/bwzLiQZDw2I" className="movie-trailer" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -326,34 +202,34 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie2}>
-                                <img src={movie2} className="movie-image" alt="Maleficent: Mistress of Evil" />
-                                <h3 className="movie-title"> Maleficent: Mistress of Evil </h3>
+                                <img src={movie2} className="movie-image" alt="Ford v. Ferrari" />
+                                <h3 className="movie-title"> Ford v. Ferrari </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class2}} id="movie2">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie2} className="popup-movie-image" alt="Maleficent: Mistress of Evil" />
+                                            <img src={movie2} className="popup-movie-image" alt="Ford v. Ferrari" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"  id="movie-header2"> Maleficent: Mistress of Evil </h3>
+                                            <h3 className="movie-header3"  id="movie-header2"> Ford v. Ferrari </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> PG </p>
+                                                <p className="run-rating"> PG-13 </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 58 m </p>
+                                                <p className="run-rating"> 2 h 32 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par" id="movie-par2">
-                                                A fantasy adventure that picks up several years after Maleficent, in which audiences learned of the events that hardened the heart of Disney's most notorious villain and drove her to curse a baby Princess Aurora, Maleficent: Mistress of Evil continues to explore the complex relationship between the horned fairy and the soon to be Queen, as they form new alliances and face new adversaries in their struggle to protect the moors and the magical creatures that reside within.
+                                                Follows an eccentric, determined team of American engineers and designers, led by automotive visionary Carroll Shelby and his British driver, Ken Miles, who are dispatched by Henry Ford II with the mission of building from scratch an entirely new automobile with the potential to finally defeat the perennially dominant Ferrari at the 1966 Le Mans World Championship.
                                             </p> <br />
-                                            <p className="movie-par" id="starring2"> <strong> Starring: </strong> Angelina Jolie, Elle Fanning, Michelle Pfeiffer, Harris Dickinson, Chiwetel Ejiofor, Ed Skrein </p> <br/>
-                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Fantasy, Family </p>
+                                            <p className="movie-par" id="starring2"> <strong> Starring: </strong> Christian Bale, Matt Damon ,Jon Bernthal, Tracy Letts, Caitriona Balfe, Noah Jupe </p> <br/>
+                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Drama, Action, Biography </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Maleficent: Mistress of Evil" src="https://www.youtube.com/embed/5MwW1NAsnR8" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Ford v. Ferrari" src="https://www.youtube.com/embed/zyYgDtY2AMY" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -361,8 +237,8 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie3}>
-                                <img src={movie3} className="movie-image" alt="The Addams Family" />
-                                <h3 className="movie-title"> The Addams Family </h3>
+                                <img src={movie3} className="movie-image" alt="Charlie's Angels" />
+                                <h3 className="movie-title"> Charlie's Angels </h3>
                             </div>
 
                             <div className="movie-popup" style={{display: this.state.class3}} id="movie3">
@@ -370,26 +246,26 @@ class MovieTheater extends React.Component {
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie3} className="popup-movie-image" alt="The Addams Family" />
+                                            <img src={movie3} className="popup-movie-image" alt="Charlie's Angels" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"> The Addams Family </h3>
+                                            <h3 className="movie-header3"> Charlie's Angels </h3>
                                             <div className="run-rating-row">
                                                 <p className="run-rating"> PG-13 </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 27 m </p>
+                                                <p className="run-rating"> 1 h 59 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par"> 
-                                                The Addams family's lives begin to unravel when they face-off against a treacherous, greedy crafty reality-TV host while also preparing for their extended family to arrive for a major celebration.    
+                                                When a systems engineer blows the whistle on a dangerous technology, Charlie's Angels from across the globe are called into action, putting their lives on the line to protect society.                                            
                                             </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> 	Oscar Isaac, Charlize Theron, Chloe Grace Moretz, Finn Wolfhard, Nick Kroll, Bette Midler </p> <br />
-                                            <p className="movie-par"> <strong> Genres: </strong> Comedy </p>
+                                            <p className="movie-par"> <strong> Starring: </strong> Kristen Stewart, Naomi Scott, Ella Balinska, Elizabeth Banks, Patrick Stewart, Djimon Hounsou </p> <br />
+                                            <p className="movie-par"> <strong> Genres: </strong> Action, Comedy, Adventure </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="The Addams Family" src="https://www.youtube.com/embed/c95edsw17QE" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Charlie's Angels" src="https://www.youtube.com/embed/RSUq4VfWfjE" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -417,3 +293,44 @@ class MovieTheater extends React.Component {
 }
 
 export default MovieTheater;
+
+                        // <div className="movie-wrapper">
+                        //     <div className="movie-container" onClick={this.openMovie5}>
+                        //         <img src={movie5} className="movie-image" alt="Artic Dogs"/>
+                        //         <h3 className="movie-title"> Artic Dogs </h3>
+                        //     </div>
+                        //     <div className="movie-popup" style={{display: this.state.class5}} id="movie5">
+                        //         <div className="movie-popup-content">
+                        //             <div className="popupCloseButton" onClick={this.closeMovie}> X </div>
+                        //             <div className="movie-info-row">
+                        //                 <div className="movie-column">
+                        //                     <img src={movie5} className="popup-movie-image" alt="Artic Dogs"/>
+                        //                 </div>
+                        //                 <div className="movie-column">
+                        //                     <h3 className="movie-header3"> Artic Dogs </h3>
+                        //                     <div className="run-rating-row">
+                        //                         <p className="run-rating"> PG </p>
+                        //                         <div className="seperator"></div>
+                        //                         <p className="run-rating"> 1 h 33 m </p>
+                        //                         <div className="seperator"></div>
+                        //                         <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
+                        //                     </div>
+                        //                     <p className="movie-par">
+                        //                         Swifty the Arctic Fox works in the mailroom of the Arctic Blast Delivery Service but dreams of one day becoming a Top Dog (the Arctic's star husky courier). To prove himself worthy of the Top Dog role, Swifty secretly commandeers one of the sleds and delivers a mysterious package to a secret location. He stumbles upon a hidden fortress, where he comes face to face with Otto Von Walrus, a blubbery evil genius, who walks around on mechanical legs and commands a loyal army of oddly polite puffin henchmen. Swifty soon discovers Otto Von Walrus' plan to drill beneath Arctic surface to unleash enough ancient gas to melt the Arctic, in order to reign as the world's supreme leader. Now, Swifty has to enlist the help of his friends: PB, an introverted polar bear, Lemmy, a scatterbrained albatross, Sal and Weez, two conspiracy theorist otters and Jade Fox, a tough as nails mechanic. This ragtag group of Arctic misfits has to band together to stop Otto Von Walrus' sinister plans and save the day.
+                        //                     </p> <br/>
+                        //                     <p className="movie-par">
+                        //                         <strong> Starring: </strong>
+                        //                         James Franco, Jeremy Renner, Alec Baldwin, Anjelica Huston, Michael Madsen, Heidi Klum
+                        //                     </p>
+                        //                     <p className="movie-par">
+                        //                         <strong> Genres: </strong>
+                        //                         Comedy, Adventure, Animation
+                        //                     </p>
+                        //                 </div>
+                        //             </div>
+                        //             <div className="trailer-holder">
+                        //                 <iframe title="Artic Dogs" src="https://www.youtube.com/embed/_2Wn0mwoJJA" className="movie-trailer" frameBorder="0" allowFullScreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                        //             </div>
+                        //         </div>
+                        //     </div>
+                        // </div>
