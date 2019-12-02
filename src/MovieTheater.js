@@ -3,7 +3,7 @@ import './styles/css/movieTheater.css';
 import movie1 from './images/Frozen_II227.jpg';
 import movie2 from './images/Ford_v_Ferrari936.jpg';
 import movie3 from './images/Charlies_Angels799.jpg';
-import movie4 from './images/Playing_with_Fire358.jpg';
+import movie4 from './images/Midway463.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -132,34 +132,34 @@ class MovieTheater extends React.Component {
                     <div className="playing-wrapper">
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie4}>
-                                <img src={movie4} className="movie-image" alt="Playing with Fire" />
-                                <h3 className="movie-title"> Playing with Fire </h3>
+                                <img src={movie4} className="movie-image" alt="Midway" />
+                                <h3 className="movie-title"> Midway </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie4} className="popup-movie-image" alt="Playing with Fire" />
+                                            <img src={movie4} className="popup-movie-image" alt="Midway" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"> Playing with Fire </h3>
+                                            <h3 className="movie-header3"> Midway </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> PG </p>
+                                                <p className="run-rating"> PG-13 </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 36 m </p>
+                                                <p className="run-rating"> 2 h 28 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par"> 
-                                                When straight-laced fire superintendent Jake Carson and his elite team of firefighters come to the rescue of three siblings, they quickly realize that no amount of training could prepare them for their most challenging job yet -- babysitting. As their lives, jobs and depot get turned upside down, the three men soon learn that children -- much like fires -- are wild and unpredictable.
+                                                The story of the soldiers and aviators who helped turn the tide of the Second World War during the iconic Battle of Midway in June 1942.
                                             </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> John Cena, Brianna Hildebrand, Keegan-Michael Key, Judy Greer, John Leguizamo, Tyler Mane </p> <br/>
-                                            <p className="movie-par"> <strong> Genres: </strong> Comedy </p> <br/> <br/>
+                                            <p className="movie-par"> <strong> Starring: </strong> Ed Skrein, Patrick Wilson, Luke Evans, Aaron Eckhart, Nick Jonas, Woody Harrelson </p> <br/>
+                                            <p className="movie-par"> <strong> Genres: </strong> Action, War, History </p> <br/> <br/>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Playing with Fire" src="https://www.youtube.com/embed/fd5GlZUpfaM" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Midway" src="https://www.youtube.com/embed/w7HnS-tpWMo" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
