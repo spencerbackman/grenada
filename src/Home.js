@@ -5,10 +5,8 @@ import lake from './images/grenadaLake.jpg';
 import golf from './images/golf-small.jpg';
 import nextPage from './icons/next-page2.svg';
 import radio from './images/grenada-radio.png';
-import holmesAd from './images/holmes-ad.jpg';
 import eats from './images/eats.png';
 import shop from './images/shop.png';
-import missAd from './images/ole-miss_DigitalAd.png';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './styles/scss/home.scss';
@@ -33,14 +31,6 @@ class Home extends React.Component {
                     </div>
                 </div>
                 <a className="weatherwidget-io" target="_blank" rel="noreferrer noopener" href="https://forecast7.com/en/33d77n89d81/grenada/?unit=us" data-label_1="GRENADA" data-label_2="WEATHER" data-theme="clear" data-basecolor="rgba(242, 242, 242, 1)" >GRENADA WEATHER</a>
-                <div className="carousel-container">
-                    <a className="banner-container" href="http://www.outreach.olemiss.edu/grenada/?utm_source=online&utm_medium=webad&utm_campaign=umgspring2019&utm_content=web_lg2" target="_blank" rel="noopener noreferrer">
-                        <img src={missAd} alt="Ole Miss Ad"/> 
-                    </a>
-                    <a className="banner-container" href="https://www.holmescc.edu/" target="_blank" rel="noopener noreferrer">
-                        <img src={holmesAd} alt="Holmes Community College Ad"/>
-                    </a>
-                </div>
                 <div className="container">
                     <h1 className="home-header"> This is Grenada Mississippi. </h1>
                     <div className="button-wrapper">
