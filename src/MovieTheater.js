@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles/css/movieTheater.css';
 import movie1 from './images/Frozen_II227.jpg';
-import movie2 from './images/Ford_v_Ferrari936.jpg';
-import movie3 from './images/Charlies_Angels799.jpg';
-import movie4 from './images/Midway463.jpg';
+import movie2 from './images/Spies_in_Disguise191.jpg';
+import movie3 from './images/Star_Wars_The_Rise_of_Skywalker208.jpg';
+import movie4 from './images/Jumanji_The_Next_Level248.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -132,34 +132,40 @@ class MovieTheater extends React.Component {
                     <div className="playing-wrapper">
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie4}>
-                                <img src={movie4} className="movie-image" alt="Midway" />
-                                <h3 className="movie-title"> Midway </h3>
+                                <img src={movie4} className="movie-image" alt="Jumanji: The Next Level" />
+                                <h3 className="movie-title"> Jumanji: The Next Level </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie4} className="popup-movie-image" alt="Midway" />
+                                            <img src={movie4} className="popup-movie-image" alt="Jumanji: The Next Level" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"> Midway </h3>
+                                            <h3 className="movie-header3"> Jumanji: The Next Level </h3>
                                             <div className="run-rating-row">
                                                 <p className="run-rating"> PG-13 </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 2 h 28 m </p>
+                                                <p className="run-rating"> 2 h 3 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par"> 
-                                                The story of the soldiers and aviators who helped turn the tide of the Second World War during the iconic Battle of Midway in June 1942.
+                                                Spencer returns to the world of Jumanji, prompting his friends, his grandfather and his grandfather's friend to enter a different and more dangerous version to save him.
                                             </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> Ed Skrein, Patrick Wilson, Luke Evans, Aaron Eckhart, Nick Jonas, Woody Harrelson </p> <br/>
-                                            <p className="movie-par"> <strong> Genres: </strong> Action, War, History </p> <br/> <br/>
+                                            <p className="movie-par"> 
+                                                <strong> Starring: </strong> 
+                                                Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan, Nick Jonas, Danny DeVito
+                                            </p> <br/>
+                                            <p className="movie-par"> 
+                                                <strong> Genres: </strong> 
+                                                Action, War, History 
+                                            </p> <br/> <br/>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Midway" src="https://www.youtube.com/embed/w7HnS-tpWMo" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Jumanji: The Next Level" src="https://www.youtube.com/embed/rBxcF-r9Ibs" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -202,34 +208,37 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie2}>
-                                <img src={movie2} className="movie-image" alt="Ford v. Ferrari" />
-                                <h3 className="movie-title"> Ford v. Ferrari </h3>
+                                <img src={movie2} className="movie-image" alt="Spies in Disguise" />
+                                <h3 className="movie-title"> Spies in Disguise </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class2}} id="movie2">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie2} className="popup-movie-image" alt="Ford v. Ferrari" />
+                                            <img src={movie2} className="popup-movie-image" alt="Spies in Disguise" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"  id="movie-header2"> Ford v. Ferrari </h3>
+                                            <h3 className="movie-header3"  id="movie-header2"> Spies in Disguise </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> PG-13 </p>
+                                                <p className="run-rating"> PG </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 2 h 32 m </p>
+                                                <p className="run-rating"> 1 h 41 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par" id="movie-par2">
-                                                Follows an eccentric, determined team of American engineers and designers, led by automotive visionary Carroll Shelby and his British driver, Ken Miles, who are dispatched by Henry Ford II with the mission of building from scratch an entirely new automobile with the potential to finally defeat the perennially dominant Ferrari at the 1966 Le Mans World Championship.
+                                                Lance and Walter. One is a super cool and charming spy, and the other invents the super cool gadgets Lance uses. When an event happens, they must learn to rely on each other like never before in order to save the world.
                                             </p> <br />
-                                            <p className="movie-par" id="starring2"> <strong> Starring: </strong> Christian Bale, Matt Damon ,Jon Bernthal, Tracy Letts, Caitriona Balfe, Noah Jupe </p> <br/>
-                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Drama, Action, Biography </p>
+                                            <p className="movie-par" id="starring2"> 
+                                                <strong> Starring: </strong> 
+                                                Will Smith, Tom Holland, Rashida Jones, Karen Gillan, DJ Khaled, Ben Mendelsohn
+                                            </p> <br/>
+                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Action, Adventure, Animation </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Ford v. Ferrari" src="https://www.youtube.com/embed/zyYgDtY2AMY" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Spies in Disguise" src="https://www.youtube.com/embed/LSSGHvzMY60" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -237,8 +246,8 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie3}>
-                                <img src={movie3} className="movie-image" alt="Charlie's Angels" />
-                                <h3 className="movie-title"> Charlie's Angels </h3>
+                                <img src={movie3} className="movie-image" alt="Star Wars: The Rise of Skywalker" />
+                                <h3 className="movie-title"> Star Wars: The Rise of Skywalker </h3>
                             </div>
 
                             <div className="movie-popup" style={{display: this.state.class3}} id="movie3">
@@ -246,26 +255,29 @@ class MovieTheater extends React.Component {
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie3} className="popup-movie-image" alt="Charlie's Angels" />
+                                            <img src={movie3} className="popup-movie-image" alt="Star Wars: The Rise of Skywalker" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"> Charlie's Angels </h3>
+                                            <h3 className="movie-header3"> Star Wars: The Rise of Skywalker </h3>
                                             <div className="run-rating-row">
                                                 <p className="run-rating"> PG-13 </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 59 m </p>
+                                                <p className="run-rating"> 2 h 35 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par"> 
-                                                When a systems engineer blows the whistle on a dangerous technology, Charlie's Angels from across the globe are called into action, putting their lives on the line to protect society.                                            
+                                                The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences. 
                                             </p> <br/>
-                                            <p className="movie-par"> <strong> Starring: </strong> Kristen Stewart, Naomi Scott, Ella Balinska, Elizabeth Banks, Patrick Stewart, Djimon Hounsou </p> <br />
-                                            <p className="movie-par"> <strong> Genres: </strong> Action, Comedy, Adventure </p>
+                                            <p className="movie-par"> 
+                                                <strong> Starring: </strong> 
+                                                Daisy Ridley, John Boyega, Oscar Isaac, Adam Driver, Ian McDiarmid, Billy Dee Williams 
+                                            </p> <br />
+                                            <p className="movie-par"> <strong> Genres: </strong> Action, Adventure, Fantasy </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Charlie's Angels" src="https://www.youtube.com/embed/RSUq4VfWfjE" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Star Wars: The Rise of Skywalker" src="https://www.youtube.com/embed/adzYW5DZoWs" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
