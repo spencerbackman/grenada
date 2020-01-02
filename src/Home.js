@@ -1,14 +1,20 @@
 import React from 'react';
 import movie from './images/movie-theater-small.png';
+import movieW from './images/webp/movie-theater-small.webp';
 import pool from './images/pool-small.png';
+import poolW from './images/webp/pool-small.webp';
 import lake from './images/grenadaLake.jpg';
+import lakeW from './images/webp/grenadaLake.webp';
 import golf from './images/golf-small.jpg';
+import golfW from './images/webp/golf-small.webp';
 import nextPage from './icons/next-page2.svg';
 import radio from './images/grenada-radio.png';
+import radioW from './images/webp/grenada-radio.webp';
 import eats from './images/eats.png';
+import eatsW from './images/webp/eats.webp';
 import shop from './images/shop.png';
+import shopW from './images/webp/shop.webp';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
 import './styles/scss/home.scss';
 
 class Home extends React.Component {
@@ -18,12 +24,6 @@ class Home extends React.Component {
     render() {
         return (
             <div className="home-page">
-            <Helmet>
-                <meta charSet="utf-8"/>
-                <title> Local Grenada </title>
-                <link rel="canonical" href="https://www.localgrenada.com/"/>
-                <meta name="description" content="Local Grenada, your all around guide to Grenada Mississippi. See upcoming events, tv episodes made in Grenada, where to eat, what to do, and Local Grenada's Radio Station." />
-            </Helmet>
                 <div className="top-wrapper">
                     <div className="video-wrapper">
                         <iframe title="drone footage over grenada" className="background-video" src="https://player.vimeo.com/video/314553822?autoplay=1&loop=1&background=1" frameBorder="0"></iframe>
@@ -44,7 +44,10 @@ class Home extends React.Component {
                             </Link>
                         </div>
                         <a className="radio link" target="_blank" rel="noreferrer noopener" href="https://radio.securenetsystems.net/cwa/index.cfm?stationCallSign=WOHT">
-                            <img src={radio} className="radio-logo" alt="grenada star radio channel 92.3" />
+                            <picture>
+                                <source type="image/webp" srcSet={radioW} />
+                                <img src={radio} className="radio-logo" alt="grenada star radio channel 92.3" />
+                            </picture>
                         </a>
                     </div>
                     <div className="main-video-holder">
@@ -59,12 +62,18 @@ class Home extends React.Component {
                         <p className="home-par"> Grenada is full of great places to eat! Check out our top picks! </p>
                     </Link>
                     <div className="home-column">
-                        <img src={eats} className="home-image" alt="Food"/>
+                        <picture>
+                            <source type="image/webp" srcSet={eatsW} />
+                            <img src={eats} className="home-image" alt="Food"/>
+                        </picture>
                     </div>
                 </div>
                 <div className="home-container" id="home-shop-container">
                     <div className="home-column">
-                        <img src={shop} className="home-image" alt="Shop"/>
+                        <picture>
+                            <source type="image/webp" srcSet={shopW} />
+                            <img src={shop} className="home-image" alt="Shop"/>
+                        </picture>
                     </div>
                     <Link className="home-column" to="/business">
                         <h2 className="home-header2"> Where to Shop </h2>
@@ -79,12 +88,18 @@ class Home extends React.Component {
                         <p className="home-par"> Want to go to the movies? Grenada Plaza Cinema is the only theater within a 50 mile radius of Grenada. Check out what movies are playing! </p>
                     </Link>
                     <div className="home-column">
-                        <img src={movie} className="home-image" alt="Grenada Plaza Cinema"/>
+                        <picture>
+                            <source type="image/webp" srcSet={movieW} />
+                            <img src={movie} className="home-image" alt="Grenada Plaza Cinema"/>
+                        </picture>
                     </div>
                 </div>
                 <div className="home-container" id="home-sports-container">
                     <div className="home-column">
-                        <img src={pool} className="home-image" alt="The Sports Center"/>
+                        <picture>
+                            <source type="image/webp" srcSet={poolW} />
+                            <img src={pool} className="home-image" alt="The Sports Center"/>
+                        </picture>
                     </div>
                     <Link className="home-column" to="/sport-center">
                         <h2 className="home-header2"> The Sports Center </h2>
@@ -99,12 +114,18 @@ class Home extends React.Component {
                         <p className="home-par"> Grenada Lake is one of the best things Grenada has to offer. With great Crappie fishing, boating, beaches, and camping you'll find it hard to pass up a day at Grenada Lake. </p>
                     </Link>1
                     <div className="home-column">
-                        <img src={lake} className="home-image" alt="Grenada Lake"/>
+                        <picture>
+                            <source type="image/webp" srcSet={lakeW} />
+                            <img src={lake} className="home-image" alt="Grenada Lake"/>
+                        </picture>
                     </div>
                 </div>
                 <div className="home-container" id="home-golf-container">
                     <div className="home-column">
-                        <img src={golf} className="home-image" alt="Dogwoods Golf Course"/>
+                        <picture>
+                            <source type="image/webp" srcSet={golfW} />
+                            <img src={golf} className="home-image" alt="Dogwoods Golf Course"/>
+                        </picture>
                     </div>
                     <Link className="home-column" to="/golf-course">
                         <h2 className="home-header2"> Dogwoods Golf Course </h2>
