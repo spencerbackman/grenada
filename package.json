@@ -6,18 +6,18 @@
   "webpackProtocol": "--https",
   "dependencies": {
     "ac-react-simple-image-slider": "0.0.9",
-    "node-sass": "^4.12.0",
-    "pure-react-carousel": "^1.21.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "node-sass": "^4.13.1",
+    "pure-react-carousel": "^1.25.2",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "react-helmet": "^5.2.1",
-    "react-leaf-carousel": "^1.2.2",
-    "react-redux": "^7.1.0",
-    "react-responsive-carousel": "^3.1.49",
-    "react-router-dom": "^5.0.1",
+    "react-leaf-carousel": "^2.0.0",
+    "react-redux": "^7.2.0",
+    "react-responsive-carousel": "^3.1.51",
+    "react-router-dom": "^5.1.2",
     "react-router-sitemap": "^1.2.0",
-    "react-scripts": "^3.3.0",
-    "react-slick": "^0.24.0"
+    "react-scripts": "^3.4.0",
+    "react-slick": "^0.25.2"
   },
   "scripts": {
     "start": "react-scripts start",

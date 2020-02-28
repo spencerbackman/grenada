@@ -1,9 +1,9 @@
 import React from 'react';
 import './styles/css/movieTheater.css';
-import movie1 from './images/Frozen_II227.jpg';
-import movie2 from './images/Spies_in_Disguise191.jpg';
-import movie3 from './images/Star_Wars_The_Rise_of_Skywalker208.jpg';
-import movie4 from './images/Jumanji_The_Next_Level248.jpg';
+import movie1 from './images/The_Invisible_Man585.jpg';
+import movie2 from './images/The_Call_of_the_Wild889.jpg';
+import movie3 from './images/Sonic_the_Hedgehog319.jpg';
+import movie4 from './images/Bad_Boys_For_Life814.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -132,40 +132,40 @@ class MovieTheater extends React.Component {
                     <div className="playing-wrapper">
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie4}>
-                                <img src={movie4} className="movie-image" alt="Jumanji: The Next Level" />
-                                <h3 className="movie-title"> Jumanji: The Next Level </h3>
+                                <img src={movie4} className="movie-image" alt="Bad Boys For Life" />
+                                <h3 className="movie-title"> Bad Boys For Life </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie4} className="popup-movie-image" alt="Jumanji: The Next Level" />
+                                            <img src={movie4} className="popup-movie-image" alt="Bad Boys For Life" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"> Jumanji: The Next Level </h3>
+                                            <h3 className="movie-header3"> Bad Boys For Life </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> PG-13 </p>
+                                                <p className="run-rating"> R </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 2 h 3 m </p>
+                                                <p className="run-rating"> 1 h 53 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par"> 
-                                                Spencer returns to the world of Jumanji, prompting his friends, his grandfather and his grandfather's friend to enter a different and more dangerous version to save him.
+                                                Old-school cops Mike Lowrey and Marcus Burnett team up with an elite unit to take down the vicious leader of a Miami drug cartel.
                                             </p> <br/>
                                             <p className="movie-par"> 
                                                 <strong> Starring: </strong> 
-                                                Dwayne Johnson, Jack Black, Kevin Hart, Karen Gillan, Nick Jonas, Danny DeVito
+                                                Will Smith, Martin Lawrence, Derrick Gilbert
                                             </p> <br/>
                                             <p className="movie-par"> 
                                                 <strong> Genres: </strong> 
-                                                Action, War, History 
+                                                Action, Comedy, Crime
                                             </p> <br/> <br/>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Jumanji: The Next Level" src="https://www.youtube.com/embed/rBxcF-r9Ibs" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Bad Boys For Life" src="https://www.youtube.com/embed/jKCj3XuPG8M" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -173,34 +173,34 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie}>
-                                <img src={movie1} className="movie-image" alt="Frozen II" />
-                                <h3 className="movie-title"> Frozen II </h3>
+                                <img src={movie1} className="movie-image" alt="The Invisible Man" />
+                                <h3 className="movie-title"> The Invisible Man </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class}} id="movie">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie1} className="popup-movie-image" alt="Frozen II" />
+                                            <img src={movie1} className="popup-movie-image" alt="The Invisible Man" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3" id="movie-header"> Frozen II </h3>
+                                            <h3 className="movie-header3" id="movie-header"> The Invisible Man </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> PG </p>
+                                                <p className="run-rating"> R </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 43 m </p>
+                                                <p className="run-rating"> 1 h 50 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noopener noreferrer" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par" id="movie-par"> 
-                                                    Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land. They set out to find the origin of Elsa's powers in order to save their kingdom.
+                                                When Cecilia's abusive ex takes his own life and leaves her fortune, she suspects his death was a hoax. As a series of coincidences turn lethal, Cecilia works to prove that she is being hunted by someone nobody can see.
                                             </p> <br/>
-                                            <p className="movie-par " id="starring"> <strong className="strong"> Starring: </strong> Kristen Bell, Idina Menzel, Jonathan Groff, Josh Gad, Sterling K. Brown, Evan Rachel Wood </p> <br/>
-                                            <p className="movie-par" id="genre"> <strong className="strong"> Genres: </strong> Adventure, Comedy, Animation </p>
+                                            <p className="movie-par " id="starring"> <strong className="strong"> Starring: </strong> Oliver Jackson-Cohen, Elisabeth Moss, Storm Reid, Aldis Hodge, Harriet Dyer </p> <br/>
+                                            <p className="movie-par" id="genre"> <strong className="strong"> Genres: </strong> Horror, Action, Sci-Fi </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Frozen II" src="https://www.youtube.com/embed/bwzLiQZDw2I" className="movie-trailer" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="The Invisible Man" src="https://www.youtube.com/embed/dSBsNeYqh-k" className="movie-trailer" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -208,37 +208,37 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie2}>
-                                <img src={movie2} className="movie-image" alt="Spies in Disguise" />
-                                <h3 className="movie-title"> Spies in Disguise </h3>
+                                <img src={movie2} className="movie-image" alt="The Call of the Wild" />
+                                <h3 className="movie-title"> The Call of the Wild </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class2}} id="movie2">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie2} className="popup-movie-image" alt="Spies in Disguise" />
+                                            <img src={movie2} className="popup-movie-image" alt="The Call of the Wild" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"  id="movie-header2"> Spies in Disguise </h3>
+                                            <h3 className="movie-header3"  id="movie-header2"> The Call of the Wild </h3>
                                             <div className="run-rating-row">
                                                 <p className="run-rating"> PG </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 41 m </p>
+                                                <p className="run-rating"> 1 h 45 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par" id="movie-par2">
-                                                Lance and Walter. One is a super cool and charming spy, and the other invents the super cool gadgets Lance uses. When an event happens, they must learn to rely on each other like never before in order to save the world.
+                                                A sled dog struggles for survival in the Alaskan wild.
                                             </p> <br />
                                             <p className="movie-par" id="starring2"> 
                                                 <strong> Starring: </strong> 
-                                                Will Smith, Tom Holland, Rashida Jones, Karen Gillan, DJ Khaled, Ben Mendelsohn
+                                                Harrison Ford, Dan Stevens, Colin Woodell, Karen Gillan, Omar Sy
                                             </p> <br/>
-                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Action, Adventure, Animation </p>
+                                            <p className="movie-par" id="genre2"> <strong> Genres: </strong> Adventure, Drama, Family </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Spies in Disguise" src="https://www.youtube.com/embed/LSSGHvzMY60" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="The Call of the Wild" src="https://www.youtube.com/embed/5P8R2zAhEwg" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -246,8 +246,8 @@ class MovieTheater extends React.Component {
 
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie3}>
-                                <img src={movie3} className="movie-image" alt="Star Wars: The Rise of Skywalker" />
-                                <h3 className="movie-title"> Star Wars: The Rise of Skywalker </h3>
+                                <img src={movie3} className="movie-image" alt="Sonic the Hedgehog" />
+                                <h3 className="movie-title"> Sonic the Hedgehog </h3>
                             </div>
 
                             <div className="movie-popup" style={{display: this.state.class3}} id="movie3">
@@ -255,29 +255,29 @@ class MovieTheater extends React.Component {
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie3} className="popup-movie-image" alt="Star Wars: The Rise of Skywalker" />
+                                            <img src={movie3} className="popup-movie-image" alt="Sonic the Hedgehog" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"> Star Wars: The Rise of Skywalker </h3>
+                                            <h3 className="movie-header3"> Sonic the Hedgehog </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> PG-13 </p>
+                                                <p className="run-rating"> PG </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 2 h 35 m </p>
+                                                <p className="run-rating"> 1 h 40 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par"> 
-                                                The surviving Resistance faces the First Order once more as Rey, Finn and Poe Dameron's journey continues. With the power and knowledge of generations behind them, the final battle commences. 
+                                                A cop in the rural town of Green Hills will help Sonic escape from the government who is looking to capture him.
                                             </p> <br/>
                                             <p className="movie-par"> 
                                                 <strong> Starring: </strong> 
-                                                Daisy Ridley, John Boyega, Oscar Isaac, Adam Driver, Ian McDiarmid, Billy Dee Williams 
+                                                    Ben Schwartz, James Marsden, Jim Carrey, Tika Sumpter, Lee Majdoub, Frank C. Turner
                                             </p> <br />
-                                            <p className="movie-par"> <strong> Genres: </strong> Action, Adventure, Fantasy </p>
+                                            <p className="movie-par"> <strong> Genres: </strong> Action, Adventure, Family </p>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Star Wars: The Rise of Skywalker" src="https://www.youtube.com/embed/adzYW5DZoWs" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Sonic the Hedgehog" src="https://www.youtube.com/embed/szby7ZHLnkA" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>

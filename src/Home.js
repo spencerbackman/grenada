@@ -130,7 +130,7 @@ class Home extends React.Component {
                     <Link className="home-column" to="/golf-course">
                         <h2 className="home-header2"> Dogwoods Golf Course </h2>
                         <img src={nextPage} className="next-page-icon" alt="Dogwoods Golf Course"/>
-                        <p className="home-par"> If you're a golfer in the area you've probably been to Dogwoods Golf Course. If you're unfimiliar with the course Golf Digest says it's "America's Best New Bargain". Go check out Dogwoods Golf Course! </p>
+                        <p className="home-par"> If you're a golfer in the area you've probably been to Dogwoods Golf Course. If you're unfamiliar with the course Golf Digest says it's "America's Best New Bargain". Go check out Dogwoods Golf Course! </p>
                     </Link>
                 </div>
             </div>
