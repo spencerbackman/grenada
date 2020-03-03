@@ -95,9 +95,15 @@ class Nav extends React.Component {
             <div>
                 <header className="navbar nav-down">
                     <div className="nav-top-row">
-                        <a className="top-nav-icon" href="tel:6628091975"><i className="fas fa-phone"></i></a>
-                        <a className="top-nav-icon" href="mailto:charlie@cwhitfieldmedia.com"> <i className="far fa-envelope"></i> </a>
-                        <a className="top-nav-icon" href="https://www.facebook.com/wemakeadvertisements/" target="_blank" rel="noopener noreferrer"> <i className="fab fa-facebook-square"></i></a>
+                        <a className="top-nav-icon" href="tel:6628091975">
+                          <i className="fas fa-phone"></i>
+                        </a>
+                        <a className="top-nav-icon" href="mailto:charlie@cwhitfieldmedia.com">
+                          <i className="far fa-envelope"></i>
+                        </a>
+                        <a className="top-nav-icon" href="https://www.facebook.com/wemakeadvertisements/" target="_blank" rel="noopener noreferrer">
+                          <i className="fab fa-facebook-square"></i>
+                        </a>
                     </div>
                     <div className="nav-line"></div>
                     <div className="nav-row">
@@ -119,7 +125,7 @@ class Nav extends React.Component {
                                     <Link className="dropdown-link" to="/sport-center"> SPORTS CENTER </Link>
                                     <Link className="dropdown-link" to="/grenada-lake"> GRENADA LAKE </Link>
                                     <Link className="dropdown-link" to="/golf-course"> GOLF COURSE </Link>
-                                </div>   
+                                </div>
                             </li>
                             <li className="dropdown">
                                 <div className="dropbtn"> TV EPISODES </div>
@@ -155,7 +161,7 @@ class Nav extends React.Component {
                             <div className={this.state.dropdown3}>
                                 <Link onClick={this.handleClose} className="dropdown-link" to="/restaurants"> RESTAURANTS </Link>
                                 <Link onClick={this.handleClose} className="dropdown-link" to="/business"> BUSINESSES </Link>
-                            </div> 
+                            </div>
                         </li>
                         <li className="dropdown">
                             <div className="dropbtn" onClick={this.handleDropClick}> PLAY </div>
