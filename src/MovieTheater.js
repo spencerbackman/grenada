@@ -3,7 +3,7 @@ import './styles/css/movieTheater.css';
 import movie1 from './images/The_Invisible_Man585.jpg';
 import movie2 from './images/The_Call_of_the_Wild889.jpg';
 import movie3 from './images/Sonic_the_Hedgehog319.jpg';
-import movie4 from './images/Bad_Boys_For_Life814.jpg';
+import movie4 from './images/Onward540.jpg';
 import { Helmet } from 'react-helmet';
 
 class MovieTheater extends React.Component {
@@ -132,40 +132,40 @@ class MovieTheater extends React.Component {
                     <div className="playing-wrapper">
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie4}>
-                                <img src={movie4} className="movie-image" alt="Bad Boys For Life" />
-                                <h3 className="movie-title"> Bad Boys For Life </h3>
+                                <img src={movie4} className="movie-image" alt="Onward" />
+                                <h3 className="movie-title"> Onward </h3>
                             </div>
                             <div className="movie-popup" style={{display: this.state.class4}} id="movie4">
                                 <div className="movie-popup-content">
                                     <div className="popupCloseButton" onClick={this.closeMovie}>X</div>
                                     <div className="movie-info-row">
                                         <div className="movie-column">
-                                            <img src={movie4} className="popup-movie-image" alt="Bad Boys For Life" />
+                                            <img src={movie4} className="popup-movie-image" alt="Onward" />
                                         </div>
                                         <div className="movie-column">
-                                            <h3 className="movie-header3"> Bad Boys For Life </h3>
+                                            <h3 className="movie-header3"> Onward </h3>
                                             <div className="run-rating-row">
-                                                <p className="run-rating"> R </p>
+                                                <p className="run-rating"> PG </p>
                                                 <div className="seperator"></div>
-                                                <p className="run-rating"> 1 h 53 m </p>
+                                                <p className="run-rating"> 1 h 42 m </p>
                                                 <div className="seperator"></div>
                                                 <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
                                             </div>
                                             <p className="movie-par"> 
-                                                Old-school cops Mike Lowrey and Marcus Burnett team up with an elite unit to take down the vicious leader of a Miami drug cartel.
+                                                Set in a suburban fantasy world, two teenage elf brothers, Ian and Barley Lightfoot, go on an journey to discover if there is still a little magic left out there in order to spend one last day with their father, who died when they were too young to remember him.
                                             </p> <br/>
                                             <p className="movie-par"> 
                                                 <strong> Starring: </strong> 
-                                                Will Smith, Martin Lawrence, Derrick Gilbert
+                                                Chris Pratt, Tom Holland, Julia Louis-Dreyfus, Octavia Spencer
                                             </p> <br/>
                                             <p className="movie-par"> 
                                                 <strong> Genres: </strong> 
-                                                Action, Comedy, Crime
+                                                Adventure, Comedy, Animation
                                             </p> <br/> <br/>
                                         </div>
                                     </div>
                                     <div className="trailer-holder">
-                                        <iframe title="Bad Boys For Life" src="https://www.youtube.com/embed/jKCj3XuPG8M" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe title="Onward" src="https://www.youtube.com/embed/gn5QmllRCn4" className="movie-trailer" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
