@@ -128,7 +128,26 @@ class MovieTheater extends React.Component {
                         <a className="movie-top-link" href="tel:6622267575"> 662.226.7575 </a>
                     </div>
                 </div>
-                <div className="movie-mid-wrapper">
+                <div className="closed-wrapper">
+                    <p className="closed-text">
+                        In compliance with local, state, and federal directives, Grenada Plaza Cinema is temporarily closed.  
+                    </p>
+                    <p className="closed-text">
+                        They will be re-evaluating their opening date in early April.  Look for updates on their website plazacinemagrenada.com, facebook, and localgrenada.com.
+                    </p>
+                    <p className="closed-text">
+                        Stay Safe!
+                    </p>
+                </div>
+
+            </div> 
+        )
+    }
+}
+
+export default MovieTheater;
+
+                {/* <div className="movie-mid-wrapper">
                     <div className="playing-wrapper">
                         <div className="movie-wrapper">
                             <div className="movie-container" onClick={this.openMovie4}>
@@ -282,12 +301,10 @@ class MovieTheater extends React.Component {
                                 </div>
                             </div>
                         </div>
-
-
-                    </div>
+                    </div> */}
 
                     {/* <h2 className="movie-header2"> Ticket Pricing </h2> */}
-                    <div className="movie-row">
+                    {/* <div className="movie-row">
                         <p className="movie-par padding10 half">
                             Ticket prices and showtimes are subject to change without notice. Must be 17 years of age or older when purchasing tickets for rated 'R' films. Identification will be required upon entry. All shows 5:00 PM and after are evening showtimes
                         </p>
@@ -298,51 +315,4 @@ class MovieTheater extends React.Component {
                             <p className="movie-par"> Children (12 and under) [3D] ~ <strong> $9.00 </strong> </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        )
-    }
-}
-
-export default MovieTheater;
-
-                        // <div className="movie-wrapper">
-                        //     <div className="movie-container" onClick={this.openMovie5}>
-                        //         <img src={movie5} className="movie-image" alt="Artic Dogs"/>
-                        //         <h3 className="movie-title"> Artic Dogs </h3>
-                        //     </div>
-                        //     <div className="movie-popup" style={{display: this.state.class5}} id="movie5">
-                        //         <div className="movie-popup-content">
-                        //             <div className="popupCloseButton" onClick={this.closeMovie}> X </div>
-                        //             <div className="movie-info-row">
-                        //                 <div className="movie-column">
-                        //                     <img src={movie5} className="popup-movie-image" alt="Artic Dogs"/>
-                        //                 </div>
-                        //                 <div className="movie-column">
-                        //                     <h3 className="movie-header3"> Artic Dogs </h3>
-                        //                     <div className="run-rating-row">
-                        //                         <p className="run-rating"> PG </p>
-                        //                         <div className="seperator"></div>
-                        //                         <p className="run-rating"> 1 h 33 m </p>
-                        //                         <div className="seperator"></div>
-                        //                         <a className="movie-link" target="_blank" rel="noreferrer noopener" href="https://boxoffice.diamondticketing.com/plazacinema/movies"> Buy Tickets </a>
-                        //                     </div>
-                        //                     <p className="movie-par">
-                        //                         Swifty the Arctic Fox works in the mailroom of the Arctic Blast Delivery Service but dreams of one day becoming a Top Dog (the Arctic's star husky courier). To prove himself worthy of the Top Dog role, Swifty secretly commandeers one of the sleds and delivers a mysterious package to a secret location. He stumbles upon a hidden fortress, where he comes face to face with Otto Von Walrus, a blubbery evil genius, who walks around on mechanical legs and commands a loyal army of oddly polite puffin henchmen. Swifty soon discovers Otto Von Walrus' plan to drill beneath Arctic surface to unleash enough ancient gas to melt the Arctic, in order to reign as the world's supreme leader. Now, Swifty has to enlist the help of his friends: PB, an introverted polar bear, Lemmy, a scatterbrained albatross, Sal and Weez, two conspiracy theorist otters and Jade Fox, a tough as nails mechanic. This ragtag group of Arctic misfits has to band together to stop Otto Von Walrus' sinister plans and save the day.
-                        //                     </p> <br/>
-                        //                     <p className="movie-par">
-                        //                         <strong> Starring: </strong>
-                        //                         James Franco, Jeremy Renner, Alec Baldwin, Anjelica Huston, Michael Madsen, Heidi Klum
-                        //                     </p>
-                        //                     <p className="movie-par">
-                        //                         <strong> Genres: </strong>
-                        //                         Comedy, Adventure, Animation
-                        //                     </p>
-                        //                 </div>
-                        //             </div>
-                        //             <div className="trailer-holder">
-                        //                 <iframe title="Artic Dogs" src="https://www.youtube.com/embed/_2Wn0mwoJJA" className="movie-trailer" frameBorder="0" allowFullScreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                        //             </div>
-                        //         </div>
-                        //     </div>
-                        // </div>
+                </div> */}
