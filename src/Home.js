@@ -51,8 +51,8 @@ class Home extends React.Component {
                         </a>
                     </div>
                     <div className="main-video-holder">
-                        <iframe className="main-video" title="Good side of Grenada - T&Z Wings" src="https://player.vimeo.com/video/362062854" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
-                        <iframe className="main-video" title="Grenada Baseball World Series Champs" src="https://player.vimeo.com/video/347786648" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                        <iframe className="main-video" title="Emmanuel Baptist Pastor" src="https://player.vimeo.com/video/401425993" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                        <iframe className="main-video" title="Grocery Basket - Local Grenada TV" src="https://player.vimeo.com/video/401470580" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                     </div>
                 </div>
                 <div className="home-container">

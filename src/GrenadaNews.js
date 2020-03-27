@@ -19,7 +19,7 @@ class GrenadaNews extends React.Component {
 
                 <div className="tv-top-container">
                     <h1 className="tv-header"> Local Grenada News </h1>
-                    <iframe title="Grenada Baseball World Series Champs" src="https://player.vimeo.com/video/347786648" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                    <iframe title="Grocery Basket" src="https://player.vimeo.com/video/401470580" width="640" height="360" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                 </div>
                 <div className="tv-mid-container">
                     <h2 className="tv-header2"> Misses an episode? </h2>
@@ -30,6 +30,9 @@ class GrenadaNews extends React.Component {
                     <a className="tv-video-link" href="https://vimeo.com/341843110" target="_blank" rel="noopener noreferrer"> Episode 5 (ROTC) </a>
                     <a className="tv-video-link" href="https://vimeo.com/344663472" target="_blank" rel="noopener noreferrer"> Episode 6 </a>
                     <a className="tv-video-link" href="https://vimeo.com/344666969" target="_blank" rel="noopener noreferrer"> Episode 7 (Pastor Blake) </a>
+                    <a className="tv-video-link" href="https://vimeo.com/347786648" target="_blank" rel="noopener noreferrer">
+                        Episode 8
+                    </a>
                 </div>
             </div>
         )
