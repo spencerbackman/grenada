@@ -52,7 +52,7 @@ class Home extends React.Component {
                     </div>
                     <div className="main-video-holder">
                         <iframe className="main-video" title="Emmanuel Baptist Pastor" src="https://player.vimeo.com/video/401425993" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
-                        <iframe className="main-video" title="First Presbyterian Church Holy Week" src="https://player.vimeo.com/video/402792491" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
+                        <iframe className="main-video" title="First Presbyterian Church Holy Week" src="https://player.vimeo.com/video/403880927" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
                     </div>
                 </div>
                 <div className="home-container">
