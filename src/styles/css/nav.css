@@ -266,6 +266,11 @@
   position: relative;
 }
 
+.dropdown4-closed {
+  display: none;
+  position: relative;
+}
+
 .dropdown-open {
   list-style-type: none;
   display: flex;
@@ -297,6 +302,21 @@
 }
 
 .dropdown3-open {
+  list-style-type: none;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+  padding: 0;
+  background: #f5f7f6;
+  height: 100%;
+}
+
+.dropdown4-open {
   list-style-type: none;
   display: flex;
   flex-flow: column;
@@ -440,7 +460,7 @@
   background: #dcdcdc;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
   .navbar2 {
     display: none;
   }

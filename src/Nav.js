@@ -14,7 +14,9 @@ class Nav extends React.Component {
             isDropClicked2: false,
             dropdown2: 'dropdown2-closed',
             isDropClicked3: false,
-            dropdown3: 'dropdown3-closed'
+            dropdown3: 'dropdown3-closed',
+            dropdown4: 'dropdown4-closed',
+            isDropClicked4: false
         }
     }
     handleClick = () => {
@@ -38,7 +40,8 @@ class Nav extends React.Component {
                 isDropClicked: true,
                 dropdown: 'dropdown-open',
                 dropdown2: 'dropdown2-closed',
-                dropdown3: 'dropdown3-closed'
+                dropdown3: 'dropdown3-closed',
+                dropdown4: 'dropdown4-closed'
             })
         } else {
             this.setState({
@@ -53,7 +56,8 @@ class Nav extends React.Component {
                 isDropClicked2: true,
                 dropdown: 'dropdown-closed',
                 dropdown2: 'dropdown2-open',
-                dropdown3: 'dropdown3-closed'
+                dropdown3: 'dropdown3-closed',
+                dropdown4: 'dropdown4-closed'
             })
         } else {
             this.setState({
@@ -68,12 +72,29 @@ class Nav extends React.Component {
                 isDropClicked3: true,
                 dropdown: 'dropdown-closed',
                 dropdown2: 'dropdown2-closed',
-                dropdown3: 'dropdown3-open'
+                dropdown3: 'dropdown3-open',
+                dropdown4: 'dropdown4-closed'
             })
         } else {
             this.setState({
                 isDropClicked3: false,
                 dropdown3: 'dropdown3-closed'
+            })
+        }
+    }
+    handleDropClick4 = () => {
+        if(!this.state.isDropClicked4) {
+            this.setState({
+                isDropClicked4: true,
+                dropdown: 'dropdown-closed',
+                dropdown2: 'dropdown2-closed',
+                dropdown3: 'dropdown3-closed',
+                dropdown4: 'dropdown4-open'
+            })
+        } else {
+            this.setState({
+                isDropClicked4: false,
+                dropdown4: 'dropdown4-closed'
             })
         }
     }
@@ -87,7 +108,8 @@ class Nav extends React.Component {
             class2: 'toggle-closed',
             dropdown: 'dropdown-closed',
             dropdown2: 'dropdown2-closed',
-            dropdown3: 'dropdown3-closed'
+            dropdown3: 'dropdown3-closed',
+            dropdown4: 'dropdown4-closed'
         })
     }
     render() {
@@ -138,6 +160,18 @@ class Nav extends React.Component {
                                     <Link className="dropdown-link" to="/rotary-club"> ROTARY CLUB </Link>
                                 </div>
                             </li>
+                            <li className="dropdown">
+                            <div className="dropbtn"> CHURCH SERVICES </div>
+                            <div className="dropdown-content">
+                                <Link className="dropdown-link" to="/burning-bush"> Burning Bush </Link>
+                                <Link className="dropdown-link" to="/central-baptist-church"> Central Baptist </Link>
+                                <Link className="dropdown-link" to="/elliot-baptist-church"> Elliot Baptist </Link>
+                                <Link className="dropdown-link" to="/emmanuel-baptist"> Emmanuel Baptist </Link>
+                                <Link className="dropdown-link" to="/first-baptist-church"> First Baptist </Link>
+                                <Link className="dropdown-link" to="/grace-baptist"> Grace Baptist </Link>
+                                <Link className="dropdown-link" to="/turning-point"> Turning Point </Link>
+                            </div>
+                        </li>
                             <li className="nav-link">
                                 <Link className="nav-links" to="/contact"> CONTACT </Link>
                             </li>
@@ -181,6 +215,18 @@ class Nav extends React.Component {
                                 <Link onClick={this.handleClose} className="dropdown-link" to="/grown-woman"> GROWN WOMAN </Link>
                                 <Link onClick={this.handleClose} className="dropdown-link" to="/grenada-events"> GRENADA EVENTS </Link>
                                 <Link onClick={this.handleClose} className="dropdown-link" to="/rotary-club"> ROTARY CLUB </Link>
+                            </div>
+                        </li>
+                        <li className="dropdown">
+                            <div className="dropbtn" onClick={this.handleDropClick4}> CHURCH SERVICES </div>
+                            <div className={this.state.dropdown4}>
+                                <Link onClick={this.handleClose} className="dropdown-link" to="/burning-bush"> Burning Bush </Link>
+                                <Link onClick={this.handleClose} className="dropdown-link" to="/central-baptist-church"> Central Baptist </Link>
+                                <Link onClick={this.handleClose} className="dropdown-link" to="/elliot-baptist-church"> Elliot Baptist </Link>
+                                <Link onClick={this.handleClose} className="dropdown-link" to="/emmanuel-baptist"> Emmanuel Baptist </Link>
+                                <Link onClick={this.handleClose} className="dropdown-link" to="/first-baptist-church"> First Baptist </Link>
+                                <Link onClick={this.handleClose} className="dropdown-link" to="/grace-baptist"> Grace Baptist </Link>
+                                <Link onClick={this.handleClose} className="dropdown-link" to="/turning-point"> Turning Point </Link>
                             </div>
                         </li>
                         <li className="nav-link" onClick={this.handleClose}>

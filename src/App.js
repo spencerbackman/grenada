@@ -15,6 +15,13 @@ import Nav from './Nav';
 import Restaurants from './Restaurants';
 import RotaryClub from './RotaryClub';
 import SportCenter from './SportCenter';
+import GraceBaptist from './GraceBaptist';
+import ElliotBaptist from './ElliotBaptist';
+import Emmanuel from './Emmanuel';
+import FirstBaptistChurch from './FirstBaptistChurch';
+import BurningBush from './BurningBush';
+import TurningPoint from './TurningPoint';
+import Cbc from './Cbc';
 import { Switch, Route } from 'react-router-dom';
 
 class App extends React.Component {
@@ -37,6 +44,13 @@ class App extends React.Component {
                     <Route path="/restaurants" component={Restaurants} />
                     <Route path="/rotary-club" component={RotaryClub} />
                     <Route path="/sport-center" component={SportCenter} />
+                    <Route path="/grace-baptist" component={GraceBaptist} />
+                    <Route path="/elliot-baptist-church" component={ElliotBaptist} />
+                    <Route path="/emmanuel-baptist" component={Emmanuel} />
+                    <Route path="/first-baptist-church" component={FirstBaptistChurch} />
+                    <Route path="/burning-bush" component={BurningBush} />
+                    <Route path="/turning-point" component={TurningPoint} />
+                    <Route path="/central-baptist-church" component={Cbc} />
                 </Switch>
                 <Footer />
             </div>
