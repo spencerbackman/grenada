@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles/css/tv.css';
 
 export default function ElliotBaptist() {
+    const [video, setVideo] = useState('415163325')
     useEffect(() => {
         window.scrollTo(0,0)
     }, [])
@@ -9,11 +10,24 @@ export default function ElliotBaptist() {
         <div className="tv-page-wrapper">
             <div className="tv-top-container">
                 <h1 className="tv-header"> Elliot Baptist Church </h1>
-                <iframe title="Elliot Baptist Church Service" src="https://player.vimeo.com/video/415163325" frameBorder="0" allowFullScreen></iframe>
+                <iframe title="Elliot Baptist Church Service" src={`https://player.vimeo.com/video/${video}`} frameBorder="0" allowFullScreen></iframe>
             </div>
             <div className="tv-mid-container">
                 <h2 className="tv-header2"> Past Services </h2>
-                <a className="tv-video-link" href="https://vimeo.com/414057287"> 4-26-20 Service </a>
+                {video === '415163325'
+                ? null
+                : 
+                <p className="tv-video-link" onClick={() => setVideo('415163325')}>
+                    5-3-20 Service
+                </p>
+                }
+                {video === '414057287'
+                ? null
+                : 
+                <p className="tv-video-link" onClick={() => setVideo('414057287')}>
+                    4-26-20 Service
+                </p>
+                }
             </div> 
         </div>
     )
