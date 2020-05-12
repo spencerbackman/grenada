@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './styles/css/tv.css';
 
 export default function Cbc() {
-    const [ am, setAm ] = useState('415149651')
-    const [ pm, setPm ] = useState('415165283')
+    const [ am, setAm ] = useState('417358100')
+    const [ pm, setPm ] = useState('417359812')
     useEffect(() => { 
         window.scrollTo(0,0)
     }, [])
@@ -17,6 +17,16 @@ export default function Cbc() {
             </div>
             <div className="tv-mid-container">
                 <h2 className="tv-header2"> Past Services </h2>
+                {am === '417358100'
+                ? null
+                : 
+                <p className="tv-video-link" onClick={() => setAm('417358100')}> 5-10-20 AM Service </p>
+                }
+                {pm === '417359812'
+                ? null 
+                : 
+                <p className="tv-video-link" onClick={() => setPm('417359812')}> 5-10-20 PM Service </p>
+                }
                 {am === '415149651'
                 ? null
                 : 

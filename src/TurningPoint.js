@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './styles/css/tv.css';
 
 export default function TurningPoint() {
-    const [ video, setVideo ] = useState('415161437')
+    const [ video, setVideo ] = useState('417361542')
     useEffect(() => {
         window.scrollTo(0,0)
     }, [])
@@ -14,6 +14,11 @@ export default function TurningPoint() {
             </div>
             <div className="tv-mid-container">
                 <h2 className="tv-header2"> Past Services </h2>
+                {video === '417361542'
+                ? null 
+                :
+                <p className="tv-video-link" onClick={() => setVideo('417361542')}> 5-10-20 Service </p> 
+                }
                 {video === '415161437'
                 ? null
                 : <p className="tv-video-link" onClick={() => setVideo('415161437')}> 5-3-20 Service </p>
